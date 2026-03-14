@@ -5,7 +5,7 @@ import type { Locale } from "@/lib/types";
 const COOLING_STAGES: Record<Locale, string[]> = {
   ro: [
     "om viu",
-    "evidență",
+    "numărare",
     "registru civil",
     "dosar permanent",
     "serie",
@@ -15,7 +15,7 @@ const COOLING_STAGES: Record<Locale, string[]> = {
   ],
   en: [
     "living person",
-    "record",
+    "counting",
     "civil registry",
     "permanent file",
     "series",
