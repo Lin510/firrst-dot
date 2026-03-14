@@ -127,8 +127,8 @@ export const seedDots: DotRecord[] = [
       en: "Without population data, the state is blind to its own territory. It cannot allocate resources, organize defense, or build schools and hospitals where needed. Statistical visibility is not power — it is the minimum condition for governance.",
     },
     synthesis: {
-      ro: "Înainte de 1838, statul nu știa câți oameni are. Recensământul nu a rezolvat această ignoranță — a transformat-o într-un drept. De atunci, teritoriul aparține celui care îl numără.",
-      en: "Before 1838, the state did not know how many people it had. The census did not resolve this ignorance — it transformed it into a right. Since then, territory belongs to whoever counts it.",
+      ro: "Înainte de 1838, a locui pe un teritoriu nu era o informație a statului. Recensământul a schimbat termenii: teritoriul declară că are dreptul să-și știe locuitorii. De atunci, prezența geografică este și prezență în registru.",
+      en: "Before 1838, living on a territory was not a piece of state information. The census changed the terms: the territory declares the right to know its inhabitants. Since then, geographic presence is also presence in a register.",
     },
     factualLayer: [
       {
@@ -228,8 +228,8 @@ export const seedDots: DotRecord[] = [
       en: "The social state demands continuity. Pensions are calculated on years of work, allowances require proof of child, medical treatment requires disease history. Without permanent records there are no guaranteed rights — only promises.",
     },
     synthesis: {
-      ro: "Înainte de 1949, statul te vedea periodic — la recensământ, la conscripție. Evidența continuă a rupt ritmul. De atunci, intervalul de vizibilitate a dispărut.",
-      en: "Before 1949, the state saw you periodically — at census, at conscription. Continuous records broke the rhythm. Since then, the interval of visibility has disappeared.",
+      ro: "Înainte de 1949, statul te vedea la momente fixe: la naștere, la conscripție, la recensământ. Evidența continuă a eliminat pauzele dintre ele. De atunci, nu mai există interval în care să nu fii în evidență.",
+      en: "Before 1949, the state saw you at fixed moments: at birth, at conscription, at census. Continuous records eliminated the gaps between them. Since then, there is no interval in which you are not on record.",
     },
     factualLayer: [
       {
@@ -443,8 +443,8 @@ export const seedDots: DotRecord[] = [
       en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. The document is not bureaucracy — it is the only form through which rights become opposable.",
     },
     synthesis: {
-      ro: "Înainte de 1990, nu existau registre ale deținătorilor privați — nu era ce de înregistrat. Libertatea de a deține a venit cu obligația de a fi văzut ca deținător. De atunci, patrimoniul este o formă de identificare.",
-      en: "Before 1990, there were no registries of private holders — there was nothing to register. The freedom to own came with the obligation to be seen as an owner. Since then, patrimony is a form of identification.",
+      ro: "Înainte de 1990, nu exista un regim juridic generalizat al proprietății private — nu era ce de profilat. Legea din 1990 nu a rezolvat doar proprietatea: a creat profilul economic al persoanei. De atunci, a deține înseamnă a fi identificat ca deținător.",
+      en: "Before 1990, there was no generalized legal regime for private property — there was nothing to profile. The 1990 law did not just resolve ownership: it created the economic profile of the person. Since then, to own means to be identified as an owner.",
     },
     factualLayer: [
       {
@@ -557,8 +557,8 @@ export const seedDots: DotRecord[] = [
       en: "Bureaucracy kills through friction. Every document that must be copied, certified, translated and re-filed is a barrier for citizens and a source of corruption. Interoperability is not control — it is the elimination of a form of daily administrative violence.",
     },
     synthesis: {
-      ro: "Înainte de 2005, datele tale existau în registre separate care nu se vorbeau. RNEP nu a colectat mai mult — a corelat ce exista deja. De atunci, nu mai ești suma dosarelor tale, ci profilul lor.",
-      en: "Before 2005, your data existed in separate registries that did not communicate. RNEP did not collect more — it correlated what already existed. Since then, you are not the sum of your files, but their profile.",
+      ro: "Înainte de 2005, existai în registre separate care nu se cunoșteau între ele. RNEP nu a adăugat date — a conectat ceea ce exista deja. De atunci, nu mai ești mai mulți în dosare paralele, ci una și aceeași persoană, corelată.",
+      en: "Before 2005, you existed in separate registries that did not know each other. RNEP did not add data — it connected what already existed. Since then, you are no longer multiple selves in parallel files, but one and the same person, correlated.",
     },
     factualLayer: [
       {
@@ -662,8 +662,8 @@ export const seedDots: DotRecord[] = [
       en: "Counter corruption lives on information asymmetry: the official knows more than you and profits from that. Digital identity eliminates the counter. It eliminates discretion, negotiation, the intermediary. If that means less space for abuse, then visibility is also a protection instrument.",
     },
     synthesis: {
-      ro: "CEI nu este pasul următor după CNP — este concluzia unui proces de un secol și jumătate. Fiecare prag a crescut operabilitatea persoanei. Azi, identitatea ta poate fi procesată fără prezența ta.",
-      en: "The electronic ID is not the next step after the CNP — it is the conclusion of a century-and-a-half process. Each threshold increased the operability of the person. Today, your identity can be processed without your presence.",
+      ro: "Înainte de 2021, a fi identificat presupunea prezența ta fizică la un punct de control. CEI a rupt această condiție. De atunci, identitatea ta poate fi procesată fără să fii prezent.",
+      en: "Before 2021, being identified required your physical presence at a point of control. The electronic ID broke that condition. Since then, your identity can be processed without you being present.",
     },
     factualLayer: [
       {
