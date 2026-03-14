@@ -197,7 +197,7 @@ export const seedDots: DotRecord[] = [
     sourceIds: [],
     regimeId: "principate",
     tags: ["recensamant", "statistica", "populatie"],
-    relatedIds: ["dot-pre-modern", "dot-evidenta-1949"],
+    relatedIds: ["dot-pre-modern", "dot-starea-civila-1864"],
     published: true,
   },
 
@@ -416,7 +416,7 @@ export const seedDots: DotRecord[] = [
     sourceIds: [],
     regimeId: "comunism",
     tags: ["evidenta", "dosar", "supraveghere", "buletin"],
-    relatedIds: ["dot-recensamant-1838", "dot-cnp-1978"],
+    relatedIds: ["dot-starea-civila-1864", "dot-cnp-1978"],
     published: true,
   },
 
