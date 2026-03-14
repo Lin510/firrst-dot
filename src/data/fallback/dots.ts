@@ -206,8 +206,8 @@ export const seedDots: DotRecord[] = [
     id: "dot-starea-civila-1864",
     slug: { ro: "starea-civila-1864", en: "civil-registry-1864" },
     title: {
-      ro: "Starea civilă devine de stat",
-      en: "Civil status becomes state-managed",
+      ro: "Cuza / Starea civilă devine de stat",
+      en: "Cuza / Civil status becomes state-managed",
     },
     periodLabel: { ro: "1864–1865", en: "1864–1865" },
     sortYear: 1864,
