@@ -6,7 +6,8 @@ const COOLING_STAGES: Record<Locale, string[]> = {
   ro: [
     "om viu",
     "evidență",
-    "registru",
+    "registru civil",
+    "dosar permanent",
     "serie",
     "trasabilitate",
     "interoperabilitate",
@@ -15,7 +16,8 @@ const COOLING_STAGES: Record<Locale, string[]> = {
   en: [
     "living person",
     "record",
-    "registry",
+    "civil registry",
+    "permanent file",
     "series",
     "traceability",
     "interoperability",
@@ -28,6 +30,7 @@ const STAGE_SLUG: Record<Locale, string[]> = {
   ro: [
     "omul-invizibil",
     "recensamantul-1838",
+    "starea-civila-1864",
     "evidenta-persoanelor-1949",
     "cnp-1978",
     "gramatica-juridica-1990",
@@ -37,6 +40,7 @@ const STAGE_SLUG: Record<Locale, string[]> = {
   en: [
     "the-invisible-person",
     "census-1838",
+    "civil-registry-1864",
     "population-records-1949",
     "personal-id-number-1978",
     "legal-grammar-1990",
@@ -49,11 +53,12 @@ const STAGE_SLUG: Record<Locale, string[]> = {
 const DOT_STAGE: Record<string, number> = {
   "dot-pre-modern": 0,
   "dot-recensamant-1838": 1,
-  "dot-evidenta-1949": 2,
-  "dot-cnp-1978": 3,
-  "dot-gramatica-juridica-1990": 4,
-  "dot-rnep-2005": 5,
-  "dot-identitate-digitala-2025": 6,
+  "dot-starea-civila-1864": 2,
+  "dot-evidenta-1949": 3,
+  "dot-cnp-1978": 4,
+  "dot-gramatica-juridica-1990": 5,
+  "dot-rnep-2005": 6,
+  "dot-identitate-digitala-2025": 7,
 };
 
 type Props = {
