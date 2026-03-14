@@ -4,25 +4,27 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Locale, DotRecord } from "@/lib/types";
 import type { Dictionary } from "@/lib/i18n/getDictionary";
+import type { TimelineLens } from "@/lib/timeline/lens";
+import { getTimelineProjection } from "@/lib/timeline/lens";
 import "@/styles/timeline.scss";
 
 type Props = {
   dots: DotRecord[];
   locale: Locale;
   dict: Dictionary;
+  lens?: TimelineLens;
 };
 
-export default function TimelineAxis({ dots, locale, dict }: Props) {
+export default function TimelineAxis({ dots, locale, dict, lens = "narrative" }: Props) {
   const pathname = usePathname();
 
   return (
     <ol className="timeline-axis list-none p-0 m-0" aria-label={dict.timeline.title}>
       {dots.map((dot, index) => {
         const slug = dot.slug?.[locale] ?? dot.slug?.ro ?? dot.id;
-        const title = dot.title?.[locale] ?? dot.title?.ro ?? "";
-        const shortLine = dot.shortLine?.[locale] ?? dot.shortLine?.ro ?? "";
         const isActive = pathname === `/${locale}/dot/${slug}`;
         const seq = String(index + 1).padStart(2, "0");
+        const projection = getTimelineProjection(dot, lens, locale);
 
         return (
           <li key={dot.id} className={`timeline-entry${isActive ? " is-active" : ""}`}>
@@ -30,7 +32,7 @@ export default function TimelineAxis({ dots, locale, dict }: Props) {
             <span className="timeline-entry-seq" aria-hidden>{seq}</span>
 
             <div className="flex flex-col gap-1.5">
-              {/* Period stamp — date of registration */}
+              {/* Period stamp */}
               <span
                 className="inline-flex items-center gap-1.5 font-sans text-[0.625rem] tracking-[0.18em] uppercase text-[var(--color-ink-subtle)]"
                 aria-label="Perioadă"
@@ -44,13 +46,22 @@ export default function TimelineAxis({ dots, locale, dict }: Props) {
                   href={`/${locale}/dot/${slug}`}
                   className="no-underline hover:text-[var(--color-accent)] transition-colors"
                 >
-                  {title}
+                  {projection.title}
                 </Link>
               </h2>
 
-              {shortLine && (
-                <p className="text-sm text-[var(--color-ink-muted)] m-0 leading-relaxed max-w-[56ch]">
-                  {shortLine}
+              {projection.body && (
+                <p
+                  className={[
+                    "m-0 leading-relaxed max-w-[56ch] transition-[font-size,color,line-height]",
+                    projection.density === "light"
+                      ? "text-sm text-[var(--color-ink-muted)]"
+                      : projection.density === "medium"
+                      ? "text-sm text-[var(--color-ink)] italic"
+                      : "text-sm text-[var(--color-ink)] line-clamp-4",
+                  ].join(" ")}
+                >
+                  {projection.body}
                 </p>
               )}
             </div>
@@ -60,3 +71,4 @@ export default function TimelineAxis({ dots, locale, dict }: Props) {
     </ol>
   );
 }
+

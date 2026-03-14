@@ -12,7 +12,13 @@
   "timeline": {
     "title": "Timeline",
     "subtitle": "the thresholds through which a person becomes legible",
-    "noResults": "No dots match the selected filters."
+    "noResults": "No dots match the selected filters.",
+    "lens": {
+      "label": "Reading",
+      "narrative": "Narrative",
+      "thesis": "Critical",
+      "synthesis": "Structural"
+    }
   },
   "dot": {
     "thesis": "Thesis",

@@ -29,8 +29,8 @@ export const seedDots: DotRecord[] = [
       en: "Invisibility does not protect — it abandons. Without registration, the right to property, to legal identity, to inheritance does not exist. You are not free — you are absent.",
     },
     synthesis: {
-      ro: "Înainte de modernitate nu exista un sistem care să vrea să vadă complet. Aceasta era o limită a puterii, nu o garanție a libertății.",
-      en: "Before modernity there was no system that wanted to see completely. This was a limitation of power, not a guarantee of freedom.",
+      ro: "Opacitatea premodernă nu era o libertate garantată — era o limită a puterii.",
+      en: "Pre-modern opacity was not guaranteed freedom — it was a limitation of power.",
     },
     factualLayer: [
       {
@@ -127,8 +127,8 @@ export const seedDots: DotRecord[] = [
       en: "Without population data, the state is blind to its own territory. It cannot allocate resources, organize defense, or build schools and hospitals where needed. Statistical visibility is not power — it is the minimum condition for governance.",
     },
     synthesis: {
-      ro: "Înainte de 1838, a locui pe un teritoriu nu era o informație a statului. Recensământul a schimbat termenii: teritoriul declară că are dreptul să-și știe locuitorii. De atunci, prezența geografică este și prezență în registru.",
-      en: "Before 1838, living on a territory was not a piece of state information. The census changed the terms: the territory declares the right to know its inhabitants. Since then, geographic presence is also presence in a register.",
+      ro: "Prezența geografică devine prezență în registru.",
+      en: "Geographic presence becomes presence in a register.",
     },
     factualLayer: [
       {
@@ -221,16 +221,16 @@ export const seedDots: DotRecord[] = [
       en: "Under Cuza, the civil person begins to exit local and confessional records and enter a unified administrative form. It is not yet a unique identifier. But it is the first major attempt at administrative serialisation of civil identity.",
     },
     thesis: {
-      ro: "Libertatea modernă vine și cu un format nou de intrare. Exact când vechiul regim se fisurează și noul stat promite ordine juridică, persoana începe să fie prinsă într-o infrastructură mai rece: nașterea, căsătoria și moartea nu mai depind doar de memoria comunității, de parohie sau de uz local. Ele intră într-un regim de înregistrare standardizată, repetabilă și verificabilă. Nu e încă CNP. Dar este primul pas mare prin care identitatea civilă devine administrabilă.",
-      en: "Modern freedom also comes with a new entry format. Exactly when the old regime fractures and the new state promises legal order, the person begins to be caught in a colder infrastructure: birth, marriage and death no longer depend only on community memory, parish or local custom. They enter a regime of standardised, repeatable and verifiable registration. Not yet a personal numeric code. But the first major step through which civil identity becomes administrable.",
+      ro: "Starea civilă de stat nu eliberează de vechiul regim — fixează în cel nou. Nașterea, căsătoria și moartea devin acte ale statului, nu ale comunității.",
+      en: "State civil registry does not free from the old regime — it fixes into the new one. Birth, marriage and death become acts of the state, not of the community.",
     },
     antithesis: {
       ro: "Fără stare civilă de stat, libertatea rămâne fragilă și locală. Un stat modern nu poate garanta filiația, succesiunea, capacitatea juridică sau identitatea persoanei dacă acestea rămân dispersate în registre neuniforme, confesionale sau strict comunitare. Trecerea la evidențe civile controlate de autoritatea publică nu este doar fixare administrativă; este condiția prin care drepturile devin verificabile și opozabile dincolo de sat, familie sau parohie.",
       en: "Without state civil registry, freedom remains fragile and local. A modern state cannot guarantee filiation, succession, legal capacity or the identity of a person if these remain scattered across non-uniform, confessional or strictly communal registers. The transition to civil records controlled by public authority is not just administrative fixing; it is the condition through which rights become verifiable and enforceable beyond village, family or parish.",
     },
     synthesis: {
-      ro: "Modernizarea civilă nu a separat libertatea de evidență. Le-a făcut să crească împreună. Din acest punct, persoana nu mai este doar cunoscută social. Devine și fixată administrativ. Același pas care o scoate din arbitrarul vechiului regim o face mai lizibilă pentru statul care se construiește.",
-      en: "Civil modernisation did not separate freedom from records. It made them grow together. From this point, the person is no longer only socially known. They also become administratively fixed. The same step that removes them from the arbitrariness of the old regime makes them more legible to the state being built.",
+      ro: "Câștigul de libertate și câștigul de lizibilitate cresc din același act.",
+      en: "Freedom and legibility grow from the same act.",
     },
     factualLayer: [
       {
@@ -338,8 +338,8 @@ export const seedDots: DotRecord[] = [
       en: "The social state demands continuity. Pensions are calculated on years of work, allowances require proof of child, medical treatment requires disease history. Without permanent records there are no guaranteed rights — only promises.",
     },
     synthesis: {
-      ro: "Înainte de 1949, statul te vedea la momente fixe: la naștere, la conscripție, la recensământ. Evidența continuă a eliminat pauzele dintre ele. De atunci, nu mai există interval în care să nu fii în evidență.",
-      en: "Before 1949, the state saw you at fixed moments: at birth, at conscription, at census. Continuous records eliminated the gaps between them. Since then, there is no interval in which you are not on record.",
+      ro: "Evidența continuă a eliminat pauzele. Nu mai există interval în care să nu fii în registru.",
+      en: "Continuous records eliminated the gaps. There is no longer an interval in which you are not on record.",
     },
     factualLayer: [
       {
@@ -431,24 +431,24 @@ export const seedDots: DotRecord[] = [
     periodLabel: { ro: "1978", en: "1978" },
     sortYear: 1978,
     shortLine: {
-      ro: "Aici omul intră în logică de serie. 13 cifre — imuabile, totale, pe viață.",
-      en: "Here the person enters the logic of series. 13 digits — immutable, total, for life.",
+      ro: "Omul devine serie. 13 cifre — imuabile, totale, atribuite la naștere.",
+      en: "The person becomes a series. 13 digits — immutable, total, assigned at birth.",
     },
     summary: {
       ro: "Decretul nr. 97/1978 introduce Codul Numeric Personal — un identificator unic, imuabil, atribuit la naștere și valabil toată viața. Pentru prima dată în istoria României, o persoană poate fi identificată univoc de orice instituție a statului prin același număr.",
       en: "Decree no. 97/1978 introduces the Personal Numeric Code — a unique, immutable identifier assigned at birth and valid for life. For the first time in Romanian history, a person can be univocally identified by any state institution through the same number.",
     },
     thesis: {
-      ro: "Nu mai ești o persoană cu un nume și o poveste — ești o serie cu 13 cifre. Numărul te-a făcut mai puțin om și mai operabil.",
-      en: "You are no longer a person with a name and a story — you are a 13-digit series. The number made you less human and more operable.",
+      ro: "Nu mai ești o persoană cu un nume — ești o serie cu 13 cifre. Numărul nu te cunoaște; te indexează.",
+      en: "You are no longer a person with a name — you are a 13-digit series. The number does not know you; it indexes you.",
     },
     antithesis: {
       ro: "Fără un cod comun, sistemul nu poate garanta nimic. Nu poate plăti pensia corect, nu poate identifica pacientul, nu poate executa o hotărâre judecătorească. Numărul nu e un instrument de control — e dovada că dreptul tău depinde de verificabilitatea ta.",
       en: "Without a common code, the system cannot guarantee anything. It cannot pay the right pension, identify the patient, execute a court ruling. The number is not a control instrument — it is proof that your right depends on your verifiability.",
     },
     synthesis: {
-      ro: "Înainte de 1978, sistemul trebuia să te cunoască pentru a opera asupra ta. CNP-ul a rupt această condiție. De atunci, e suficient să fii indexat.",
-      en: "Before 1978, the system had to know you to operate upon you. The personal ID broke that condition. Since then, it is enough to be indexed.",
+      ro: "CNP-ul a rupt condiția cunoașterii: de atunci, e suficient să fii indexat.",
+      en: "The personal ID number broke the condition of knowledge: since then, it is enough to be indexed.",
     },
     factualLayer: [
       {
@@ -545,16 +545,16 @@ export const seedDots: DotRecord[] = [
       en: "The collapse of communism brings a structural legal mutation: through the laws of 1990–1991, the person enters for the first time the registries of owners, associates and debtors. They are no longer visible only as a citizen — they become visible also as an economic actor with opposable titles and obligations.",
     },
     thesis: {
-      ro: "Titlul de proprietate nu e libertate simplă — e intrarea în registrul deținătorilor. Acum poți fi urmărit, executat și verificat nu pentru cine ești, ci pentru ce deții.",
-      en: "The property title is not simple freedom — it is entry into the registry of holders. Now you can be tracked, executed and verified not for who you are, but for what you hold.",
+      ro: "Proprietatea privată nu e doar un drept — e intrarea în registrul deținătorilor. Ești urmărit, executat și verificat pentru ce deții, nu pentru cine ești.",
+      en: "Private property is not just a right — it is entry into the registry of holders. You are tracked, executed and verified for what you hold, not for who you are.",
     },
     antithesis: {
       ro: "Fără titlu juridic documentat, proprietatea nu există în fața legii — există doar ca fapt. Faptul poate fi negat, contestat, confiscat. Registrele nu sunt un inventar al obedienței — sunt singura formă prin care dreptul privat devine apărabil.",
       en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. Registries are not an inventory of obedience — they are the only form through which private rights become defensible.",
     },
     synthesis: {
-      ro: "Înainte de 1990, nu exista un regim juridic generalizat al proprietății private — nu era ce de profilat. Legea din 1990 nu a rezolvat doar proprietatea: a creat profilul economic al persoanei. De atunci, a deține înseamnă a fi identificat ca deținător.",
-      en: "Before 1990, there was no generalized legal regime for private property — there was nothing to profile. The 1990 law did not just resolve ownership: it created the economic profile of the person. Since then, to own means to be identified as an owner.",
+      ro: "Dreptul de proprietate creează profilul economic al persoanei: a deține înseamnă a fi identificat ca deținător.",
+      en: "Property rights create the economic profile of the person: to own means to be identified as an owner.",
     },
     factualLayer: [
       {
@@ -667,8 +667,8 @@ export const seedDots: DotRecord[] = [
       en: "Bureaucracy kills through friction. Every document that must be copied, certified, translated and re-filed is a barrier for citizens and a source of corruption. Interoperability is not control — it is the elimination of a form of daily administrative violence.",
     },
     synthesis: {
-      ro: "Înainte de 2005, existai în registre separate care nu se cunoșteau între ele. RNEP nu a adăugat date — a conectat ceea ce exista deja. De atunci, nu mai ești mai mulți în dosare paralele, ci una și aceeași persoană, corelată.",
-      en: "Before 2005, you existed in separate registries that did not know each other. RNEP did not add data — it connected what already existed. Since then, you are no longer multiple selves in parallel files, but one and the same person, correlated.",
+      ro: "Nu mai ești în N dosare separate. Ești un singur profil corelat.",
+      en: "You are no longer in N separate files. You are a single correlated profile.",
     },
     factualLayer: [
       {
@@ -772,8 +772,8 @@ export const seedDots: DotRecord[] = [
       en: "Counter corruption lives on information asymmetry: the official knows more than you and profits from that. Digital identity eliminates the counter. It eliminates discretion, negotiation, the intermediary. If that means less space for abuse, then visibility is also a protection instrument.",
     },
     synthesis: {
-      ro: "Înainte de 2021, a fi identificat presupunea prezența ta fizică la un punct de control. CEI a rupt această condiție. De atunci, identitatea ta poate fi procesată fără să fii prezent.",
-      en: "Before 2021, being identified required your physical presence at a point of control. The electronic ID broke that condition. Since then, your identity can be processed without you being present.",
+      ro: "CEI a rupt condiția prezenței fizice: identitatea ta poate fi procesată fără să fii prezent.",
+      en: "The electronic ID broke the condition of physical presence: your identity can be processed without you being present.",
     },
     factualLayer: [
       {

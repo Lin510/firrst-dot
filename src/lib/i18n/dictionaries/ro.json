@@ -12,7 +12,13 @@
   "timeline": {
     "title": "Cronologie",
     "subtitle": "pragurile prin care persoana devine lizibilă",
-    "noResults": "Niciun punct nu corespunde filtrelor selectate."
+    "noResults": "Niciun punct nu corespunde filtrelor selectate.",
+    "lens": {
+      "label": "Lectură",
+      "narrative": "Narativă",
+      "thesis": "Critică",
+      "synthesis": "Structurală"
+    }
   },
   "dot": {
     "thesis": "Teză",
