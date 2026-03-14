@@ -127,8 +127,8 @@ export const seedDots: DotRecord[] = [
       en: "Without population data, the state is blind to its own territory. It cannot allocate resources, organize defense, or build schools and hospitals where needed. Statistical visibility is not power — it is the minimum condition for governance.",
     },
     synthesis: {
-      ro: "Recensământul inaugurează o relație nouă: pentru prima dată statul declară că are dreptul să știe cine locuiește pe teritoriul său. Nu ca să te cunoască — ca să te gestioneze.",
-      en: "The census inaugurates a new relationship: for the first time the state declares it has the right to know who lives on its territory. Not to know you — to manage you.",
+      ro: "Înainte de 1838, statul nu știa câți oameni are. Recensământul nu a rezolvat această ignoranță — a transformat-o într-un drept. De atunci, teritoriul aparține celui care îl numără.",
+      en: "Before 1838, the state did not know how many people it had. The census did not resolve this ignorance — it transformed it into a right. Since then, territory belongs to whoever counts it.",
     },
     factualLayer: [
       {
@@ -228,8 +228,8 @@ export const seedDots: DotRecord[] = [
       en: "The social state demands continuity. Pensions are calculated on years of work, allowances require proof of child, medical treatment requires disease history. Without permanent records there are no guaranteed rights — only promises.",
     },
     synthesis: {
-      ro: "Evidența continuă transformă persoana din subiect al unor momente de vizibilitate (recensământ) în obiect al unei supravegheri permanente. Diferența nu e de grad — e de natură.",
-      en: "Continuous records transform the person from a subject of visibility moments (census) into an object of permanent surveillance. The difference is not of degree — it is of nature.",
+      ro: "Înainte de 1949, statul te vedea periodic — la recensământ, la conscripție. Evidența continuă a rupt ritmul. De atunci, intervalul de vizibilitate a dispărut.",
+      en: "Before 1949, the state saw you periodically — at census, at conscription. Continuous records broke the rhythm. Since then, the interval of visibility has disappeared.",
     },
     factualLayer: [
       {
@@ -443,8 +443,8 @@ export const seedDots: DotRecord[] = [
       en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. The document is not bureaucracy — it is the only form through which rights become opposable.",
     },
     synthesis: {
-      ro: "Libertatea de a deține vine cu obligația de a fi văzut ca deținător. Noul registru nu ți-a dat dreptul — ți-a creat profilul economic.",
-      en: "The freedom to own comes with the obligation to be seen as an owner. The new registry did not give you the right — it created your economic profile.",
+      ro: "Înainte de 1990, nu existau registre ale deținătorilor privați — nu era ce de înregistrat. Libertatea de a deține a venit cu obligația de a fi văzut ca deținător. De atunci, patrimoniul este o formă de identificare.",
+      en: "Before 1990, there were no registries of private holders — there was nothing to register. The freedom to own came with the obligation to be seen as an owner. Since then, patrimony is a form of identification.",
     },
     factualLayer: [
       {
@@ -557,8 +557,8 @@ export const seedDots: DotRecord[] = [
       en: "Bureaucracy kills through friction. Every document that must be copied, certified, translated and re-filed is a barrier for citizens and a source of corruption. Interoperability is not control — it is the elimination of a form of daily administrative violence.",
     },
     synthesis: {
-      ro: "RNEP transformă suma dosarelor separate într-un profil integrat. Diferența nu e de cantitate — e de natură. N sisteme izolate știu N bucăți. Un sistem corelat știe tot.",
-      en: "RNEP transforms the sum of separate files into an integrated profile. The difference is not of quantity — it is of nature. N isolated systems know N pieces. A correlated system knows everything.",
+      ro: "Înainte de 2005, datele tale existau în registre separate care nu se vorbeau. RNEP nu a colectat mai mult — a corelat ce exista deja. De atunci, nu mai ești suma dosarelor tale, ci profilul lor.",
+      en: "Before 2005, your data existed in separate registries that did not communicate. RNEP did not collect more — it correlated what already existed. Since then, you are not the sum of your files, but their profile.",
     },
     factualLayer: [
       {
@@ -662,8 +662,8 @@ export const seedDots: DotRecord[] = [
       en: "Counter corruption lives on information asymmetry: the official knows more than you and profits from that. Digital identity eliminates the counter. It eliminates discretion, negotiation, the intermediary. If that means less space for abuse, then visibility is also a protection instrument.",
     },
     synthesis: {
-      ro: "Nu am ajuns la identitatea digitală dintr-un salt. Am fost făcuți treptat mai lizibili, mai indexabili, mai procesabili — câte un prag pe rând. Istoria modernă este istoria creșterii operabilității persoanei.",
-      en: "We did not arrive at digital identity in a leap. We were made gradually more legible, more indexable, more processable — one threshold at a time. Modern history is the history of the growing operability of the person.",
+      ro: "CEI nu este pasul următor după CNP — este concluzia unui proces de un secol și jumătate. Fiecare prag a crescut operabilitatea persoanei. Azi, identitatea ta poate fi procesată fără prezența ta.",
+      en: "The electronic ID is not the next step after the CNP — it is the conclusion of a century-and-a-half process. Each threshold increased the operability of the person. Today, your identity can be processed without your presence.",
     },
     factualLayer: [
       {
