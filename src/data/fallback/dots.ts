@@ -174,7 +174,7 @@ export const seedDots: DotRecord[] = [
     rebelView: {
       title: { ro: "Primul inventar", en: "The first inventory" },
       body: {
-        ro: "Suntem numărați, clasificați, împinși în categori. Nu contezi ca om liber — contezi ca resursă fiscală sau militară. Statul nu te cunoaște, te numără.",
+        ro: "Suntem numărați, clasificați, împinși în categorii. Nu contezi ca om liber — contezi ca resursă fiscală sau militară. Statul nu te cunoaște, te numără.",
         en: "We are counted, classified, pushed into categories. You don't count as a free person — you count as a fiscal or military resource. The state doesn't know you, it counts you.",
       },
     },
@@ -212,7 +212,7 @@ export const seedDots: DotRecord[] = [
     periodLabel: { ro: "1949", en: "1949" },
     sortYear: 1949,
     shortLine: {
-      ro: "Doșarul tău nu se mai închide. Rămâne deschis toată viața.",
+      ro: "Dosarul tău nu se mai închide. Rămâne deschis toată viața.",
       en: "Your file no longer closes. It stays open for life.",
     },
     summary: {
@@ -325,7 +325,7 @@ export const seedDots: DotRecord[] = [
       en: "Here the person enters the logic of series. 13 digits — immutable, total, for life.",
     },
     summary: {
-      ro: "Decretul nr. 97/1978 introducere Codul Numeric Personal — un identificator unic, imuabil, atribuit la naștere și valabil toată viața. Pentru prima dată în istoria României, o persoană poate fi identificată univoc de orice instituție a statului prin același număr.",
+      ro: "Decretul nr. 97/1978 introduce Codul Numeric Personal — un identificator unic, imuabil, atribuit la naștere și valabil toată viața. Pentru prima dată în istoria României, o persoană poate fi identificată univoc de orice instituție a statului prin același număr.",
       en: "Decree no. 97/1978 introduces the Personal Numeric Code — a unique, immutable identifier assigned at birth and valid for life. For the first time in Romanian history, a person can be univocally identified by any state institution through the same number.",
     },
     thesis: {
