@@ -732,6 +732,53 @@ Failure is:
 
 ---
 
+## Git workflow
+
+This project uses a two-branch local workflow:
+
+| Branch | Role |
+|--------|------|
+| `main` | Stable versions only — merged from `work` when ready |
+| `work` | Active development — all day-to-day commits go here |
+
+**You are always on `work` during development.**
+
+### Daily commands
+
+```bash
+# Commit current changes on work
+git add -A && git commit -m "feat: descriere scurtă"
+
+# Promote to main when stable
+git checkout main
+git merge work
+git checkout work
+
+# See where you are
+git log --oneline --graph --all
+git branch
+git status
+```
+
+### Commit message conventions
+
+```bash
+feat: adaugă componentă nouă sau funcționalitate
+fix: repară un bug
+style: schimbări vizuale / CSS / SCSS
+content: actualizare conținut dots sau dicționar
+chore: config, dependențe, seed, build
+refactor: restructurare fără schimbări de comportament
+```
+
+### Rules
+- Never commit directly to `main`
+- Never merge `main` → `work` (mergi întotdeauna `work` → `main`)
+- One logical change per commit — nu îmbina lucruri neinrudite
+- `.env.local` este în `.gitignore` — nu se commitează niciodată
+
+---
+
 ## Working style for the coding agent
 
 When implementing:

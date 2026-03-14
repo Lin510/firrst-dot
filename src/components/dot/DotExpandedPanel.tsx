@@ -1,11 +1,16 @@
 import type { Locale, DotRecord } from "@/lib/types";
 import type { Dictionary } from "@/lib/i18n/getDictionary";
+import type { MiniDot } from "@/components/dot/DotMiniAxis";
+import DotMiniAxis from "@/components/dot/DotMiniAxis";
+import CoolingPath from "@/components/dot/CoolingPath";
 import "@/styles/reading.scss";
 
 type Props = {
   dot: DotRecord;
   locale: Locale;
   dict: Dictionary;
+  prevDot?: MiniDot;
+  nextDot?: MiniDot;
 };
 
 function L(
@@ -25,7 +30,7 @@ const REGIME_LABELS: Record<string, { ro: string; en: string }> = {
   "digital":     { ro: "Era Digitală",           en: "Digital Era" },
 };
 
-export default function DotExpandedPanel({ dot, locale, dict }: Props) {
+export default function DotExpandedPanel({ dot, locale, dict, prevDot, nextDot }: Props) {
   const d = dict.dot;
   const regimeLabel = dot.regimeId
     ? (REGIME_LABELS[dot.regimeId]?.[locale] ?? dot.regimeId)
@@ -39,7 +44,10 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
 
       {/* ── Hero ─────────────────────────────────────────────── */}
       <div className="bento-cell bento-hero">
-        <span className="period-label">{L(dot.periodLabel, locale)}</span>
+        <span className="period-label">
+          <span className="entry-mark" aria-hidden>■</span>
+          {L(dot.periodLabel, locale)}
+        </span>
         <h1>{L(dot.title, locale)}</h1>
         <p className="short-line">{L(dot.shortLine, locale)}</p>
       </div>
@@ -50,6 +58,13 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
           <p>{L(dot.summary, locale)}</p>
         </div>
       )}
+
+      {/* ── Calea răcirii ────────────────────────────────────── */}
+      <CoolingPath
+        dotId={dot.id}
+        locale={locale}
+        label={d.coolingPath}
+      />
 
       {/* ── Tensiune: Teză ↔ Antiteză ────────────────────────── */}
       <div className="bento-tension">
@@ -86,7 +101,7 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
       {/* ── 3 Layere ─────────────────────────────────────────── */}
       <div className="bento-layers">
         {dot.factualLayer?.length > 0 && (
-          <div className="bento-cell bento-layer">
+          <div className="bento-cell bento-layer bento-layer-factual">
             <span className="layer-label">{d.factualLayer}</span>
             <ul>
               {dot.factualLayer.map((item, i) => (
@@ -97,7 +112,7 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
         )}
 
         {dot.legalLayer?.length > 0 && (
-          <div className="bento-cell bento-layer">
+          <div className="bento-cell bento-layer bento-layer-legal">
             <span className="layer-label">{d.legalLayer}</span>
             <ul>
               {dot.legalLayer.map((item, i) => (
@@ -108,7 +123,7 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
         )}
 
         {dot.systemLayer?.length > 0 && (
-          <div className="bento-cell bento-layer">
+          <div className="bento-cell bento-layer bento-layer-system">
             <span className="layer-label">{d.systemLayer}</span>
             <ul>
               {dot.systemLayer.map((item, i) => (
@@ -118,6 +133,18 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
           </div>
         )}
       </div>
+
+      {/* ── Urma lăsată ────────────────────────────────────── */}
+      {dot.consequences && dot.consequences.length > 0 && (
+        <div className="bento-cell bento-trace">
+          <span className="layer-label">{d.trace}</span>
+          <ul>
+            {dot.consequences.map((item, i) => (
+              <li key={i}>{L(item, locale)}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* ── Asocieri ─────────────────────────────────────────── */}
       {hasAssociations && (
@@ -173,6 +200,16 @@ export default function DotExpandedPanel({ dot, locale, dict }: Props) {
           ))}
         </footer>
       )}
+
+      {/* ── Mini-axă cronologică ─────────────────────────────── */}
+      <DotMiniAxis
+        prev={prevDot}
+        current={dot}
+        next={nextDot}
+        locale={locale}
+        prevLabel={d.prevDot}
+        nextLabel={d.nextDot}
+      />
     </article>
   );
 }

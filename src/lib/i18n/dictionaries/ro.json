@@ -11,13 +11,14 @@
   },
   "timeline": {
     "title": "Cronologie",
+    "subtitle": "pragurile prin care persoana devine lizibilă",
     "noResults": "Niciun punct nu corespunde filtrelor selectate."
   },
   "dot": {
     "thesis": "Teză",
     "antithesis": "Antiteză",
     "factualLayer": "Ce s-a întâmplat",
-    "legalLayer": "Cadrul juridic și instituțional",
+    "legalLayer": "Urma în lege",
     "systemLayer": "Ce a devenit posibil",
     "systemView": "Viziunea sistemului",
     "rebelView": "Viziunea celui contestatar",
@@ -27,7 +28,11 @@
     "sources": "Surse",
     "relatedDots": "Puncte conexe",
     "readMore": "Citește mai mult",
-    "collapse": "Restrânge"
+    "collapse": "Restrânge",
+    "trace": "Urma lăsată",
+    "coolingPath": "Calea răcirii",
+    "prevDot": "Pragul anterior",
+    "nextDot": "Pragul următor"
   },
   "about": {
     "title": "Metodă",

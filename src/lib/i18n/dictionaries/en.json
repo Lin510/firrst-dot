@@ -11,13 +11,14 @@
   },
   "timeline": {
     "title": "Timeline",
+    "subtitle": "the thresholds through which a person becomes legible",
     "noResults": "No dots match the selected filters."
   },
   "dot": {
     "thesis": "Thesis",
     "antithesis": "Antithesis",
     "factualLayer": "What happened",
-    "legalLayer": "Legal and institutional framework",
+    "legalLayer": "Trace in law",
     "systemLayer": "What became possible",
     "systemView": "The system's view",
     "rebelView": "The dissenter's view",
@@ -27,7 +28,11 @@
     "sources": "Sources",
     "relatedDots": "Related dots",
     "readMore": "Read more",
-    "collapse": "Collapse"
+    "collapse": "Collapse",
+    "trace": "The trace left",
+    "coolingPath": "The cooling path",
+    "prevDot": "Previous threshold",
+    "nextDot": "Next threshold"
   },
   "about": {
     "title": "Method",

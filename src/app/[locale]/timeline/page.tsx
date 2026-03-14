@@ -15,21 +15,25 @@ export default async function TimelinePage({ params }: Props) {
   const dict = await getDictionary(lang);
 
   await connectDB();
-  const dots = await Dot.find({ published: true })
+  const raw = await Dot.find({ published: true })
     .sort({ sortYear: 1 })
     .lean()
     .exec();
+  const dots = JSON.parse(JSON.stringify(raw));
 
   return (
     <div className="px-6 py-16 max-w-[var(--content-max-width)] mx-auto">
       <header className="mb-12">
-        <h1 className="text-[var(--color-ink)]">{dict.timeline.title}</h1>
+        <h1 className="text-[var(--color-ink)] mb-2">{dict.timeline.title}</h1>
+        <p className="text-sm text-[var(--color-ink-subtle)] italic m-0 leading-relaxed">
+          {dict.timeline.subtitle}
+        </p>
       </header>
 
       {dots.length === 0 ? (
         <p className="text-[var(--color-ink-muted)]">{dict.timeline.noResults}</p>
       ) : (
-        <TimelineAxis dots={dots as never} locale={lang} dict={dict} />
+        <TimelineAxis dots={dots} locale={lang} dict={dict} />
       )}
     </div>
   );

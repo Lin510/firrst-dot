@@ -47,15 +47,45 @@
     content: "";
     position: absolute;
     left: calc(var(--_spine) - var(--_gutter));
-    top: calc(2.375rem);   /* vertically centered on the marker */
+    top: calc(2.375rem);
     width: calc(var(--_gutter) - var(--_spine) - 2px);
     height: 1px;
     background: var(--color-border);
-    transition: background 0.15s ease;
+    transition: background 0.2s ease;
   }
 
   &:hover::before {
     background: var(--color-accent-muted);
+  }
+
+  /* Active entry — came from this dot */
+  &.is-active {
+    &::before {
+      background: var(--color-accent);
+    }
+  }
+}
+
+/* Sequence number — position in chain */
+.timeline-entry-seq {
+  position: absolute;
+  left: calc(var(--_spine) - var(--_gutter) - 22px);
+  top: calc(2.375rem - 0.45em);
+  font-family: var(--font-ui);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-border);
+  line-height: 1;
+  transition: color 0.15s ease;
+  user-select: none;
+
+  .timeline-entry:hover & {
+    color: var(--color-ink-subtle);
+  }
+
+  .timeline-entry.is-active & {
+    color: var(--color-accent-muted);
   }
 }
 
@@ -86,5 +116,12 @@
 .timeline-entry:hover .timeline-dot-marker.is-published {
   background: var(--color-accent);
   border-color: var(--color-accent);
+}
+
+/* Active entry: dot stays accent even without hover */
+.timeline-entry.is-active .timeline-dot-marker {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 15%, transparent);
 }
 

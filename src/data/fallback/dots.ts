@@ -21,12 +21,12 @@ export const seedDots: DotRecord[] = [
       en: "Before modernity, a person was visible only locally and partially: household, labor, taxpayer. No central system sought a complete image. Power operated through community, not through the individual.",
     },
     thesis: {
-      ro: "Libertatea vine din invizibilitate. Când sistemul nu te poate vedea complet, nu te poate controla complet.",
-      en: "Freedom comes from invisibility. When the system cannot see you completely, it cannot control you completely.",
+      ro: "Libertatea premodernă nu era garantată de lege — era produsă de opacitate. Nu puteai fi urmărit pentru că nu puteai fi văzut.",
+      en: "Pre-modern freedom was not guaranteed by law — it was produced by opacity. You could not be tracked because you could not be seen.",
     },
     antithesis: {
-      ro: "Invizibilitatea înseamnă și inexistență juridică. Fără înregistrare nu există protecție, proprietate sau drept.",
-      en: "Invisibility also means legal nonexistence. Without registration there is no protection, property, or right.",
+      ro: "Invizibilitatea nu protejează — abandonează. Fără înregistrare, dreptul la proprietate, la identitate juridică, la moștenire nu există. Nu ești liber — ești absent.",
+      en: "Invisibility does not protect — it abandons. Without registration, the right to property, to legal identity, to inheritance does not exist. You are not free — you are absent.",
     },
     synthesis: {
       ro: "Înainte de modernitate nu exista un sistem care să vrea să vadă complet. Aceasta era o limită a puterii, nu o garanție a libertății.",
@@ -48,12 +48,12 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Registrele parohiale sunt singura formă de evidență a persoanei. Nu există cod de identificare, nu există registru național.",
-        en: "Parish registers are the only form of personal record. There is no identification code, no national register.",
+        ro: "Registre parohiale — singura formă de evidență recunoscută. Fără obligație de cod. Fără jurisdicție centrală.",
+        en: "Parish registers — the only recognised form of record. No code obligation. No central jurisdiction.",
       },
       {
-        ro: "Dreptul cutumiar și hrisoavele domneşti reglementează relațiile de proprietate fără un cadastru unificat.",
-        en: "Customary law and princely charters regulate property relations without a unified cadastre.",
+        ro: "Drept cutumiar / hrisoave — reglementează posesia şi proprietatea fără cadastru unificat şi fără titlu opozabil.",
+        en: "Customary law / charters — regulate possession and property without unified cadastre and without opposable title.",
       },
     ],
     systemLayer: [
@@ -69,20 +69,20 @@ export const seedDots: DotRecord[] = [
     systemView: {
       title: { ro: "Limitare administrativă", en: "Administrative limitation" },
       body: {
-        ro: "Absența evidenței centrale înseamnă că statul nu poate administra eficient, nu poate colecta impozite uniform, nu poate mobiliza resurse naționale.",
-        en: "The absence of central records means the state cannot administer efficiently, collect taxes uniformly, or mobilize national resources.",
+        ro: "Un stat fără date nu e un stat — e o pretenție. Nu poți taxa, recruta sau planifica fără să știi câți oameni ai și unde se află.",
+        en: "A state without data is not a state — it is a pretense. You cannot tax, recruit or plan without knowing how many people you have and where they are.",
       },
     },
     rebelView: {
       title: { ro: "Opacitate protectoare", en: "Protective opacity" },
       body: {
-        ro: "Invizibilitatea față de stat este o formă de libertate reală. Când sistemul nu te vede, nu te poate urmări, taxa sau executa.",
-        en: "Invisibility from the state is a form of real freedom. When the system cannot see you, it cannot track, tax, or execute against you.",
+        ro: "Puterea trebuia să te găsească pentru a opera asupra ta. Asta era o distanță reală. Nu o grație — o limitare structurală pe care modernitatea a eliminat-o sistematic.",
+        en: "Power had to find you to operate upon you. That was a real distance. Not a grace — a structural limitation that modernity eliminated systematically.",
       },
     },
     whyItMatters: {
-      ro: "Acesta este punctul zero. Toate mutațiile ulterioare sunt pași dinspre această invizibilitate spre o lizibilitate tot mai completă.",
-      en: "This is point zero. All subsequent mutations are steps away from this invisibility toward increasingly complete legibility.",
+      ro: "Fiecare sistem de evidență creat după 1838 este un răspuns la această limitare. Modernizarea administrativă a României este, în esență, istoria eliminării acestei opacități.",
+      en: "Every records system created after 1838 is a response to this limitation. Romania's administrative modernization is, in essence, the history of eliminating this opacity.",
     },
     consequences: [
       {
@@ -111,7 +111,7 @@ export const seedDots: DotRecord[] = [
     sortYear: 1838,
     endYear: 1860,
     shortLine: {
-      ro: "De acâm, a trăi într-un teritoriu înseamnă a fi numărat.",
+      ro: "De acum, a trăi într-un teritoriu înseamnă a fi numărat.",
       en: "From now on, to live in a territory means to be counted.",
     },
     summary: {
@@ -123,12 +123,12 @@ export const seedDots: DotRecord[] = [
       en: "The census reduces people to categories: taxpayers, non-subjects, nobles, serfs. You are inventoried, not seen.",
     },
     antithesis: {
-      ro: "Recensământul e baza oricărei planificări publice: spitale, școli, drumuri presupun să știi câți oameni ai și unde.",
-      en: "The census is the basis of any public planning: hospitals, schools, roads require knowing how many people you have and where.",
+      ro: "Fără date despre populație, statul e orb față de propriul teritoriu. Nu poate aloca resurse, nu poate organiza apărarea, nu poate construi școli sau spitale unde sunt necesare. Vizibilitatea statistică nu e putere — e condiția minimă pentru guvernare.",
+      en: "Without population data, the state is blind to its own territory. It cannot allocate resources, organize defense, or build schools and hospitals where needed. Statistical visibility is not power — it is the minimum condition for governance.",
     },
     synthesis: {
-      ro: "Recensământul inaugurează o relație nouă dintre stat și persoană: vizibilitatea statistică precede orice formă de drept sau obligație. Nu am trecut dintr-o singură zi de la om liber la număr.",
-      en: "The census inaugurates a new relationship between state and person: statistical visibility precedes any form of right or obligation. We did not pass in a single day from free person to number.",
+      ro: "Recensământul inaugurează o relație nouă: pentru prima dată statul declară că are dreptul să știe cine locuiește pe teritoriul său. Nu ca să te cunoască — ca să te gestioneze.",
+      en: "The census inaugurates a new relationship: for the first time the state declares it has the right to know who lives on its territory. Not to know you — to manage you.",
     },
     factualLayer: [
       {
@@ -142,12 +142,12 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Regulamentele Organice introduc obligativitatea evidenței administrative centralizate.",
-        en: "The Organic Regulations introduce mandatory centralized administrative records.",
+        ro: "Regulamentul Organic / 1831 — instituie obligația evidenței administrative centralizate la nivelul Principatelor.",
+        en: "Organic Regulation / 1831 — establishes the obligation of centralised administrative records across the Principalities.",
       },
       {
-        ro: "Primele registre fiscale centralizate — datele despre persoană încep să existe în afara comunității locale.",
-        en: "First centralized fiscal registers — data about a person begins to exist outside the local community.",
+        ro: "Recensamânt / 1838 — introduce prima operație sistematică de înregistrare a populației ca resursă fiscală şi militară.",
+        en: "Census / 1838 — introduces the first systematic operation of recording the population as a fiscal and military resource.",
       },
     ],
     systemLayer: [
@@ -167,8 +167,8 @@ export const seedDots: DotRecord[] = [
     systemView: {
       title: { ro: "Modernizare necesară", en: "Necessary modernization" },
       body: {
-        ro: "Fără date despre populație nu poți construi un stat modern. Știința statistică este instrumentul prin care un principat slab devine o națiune administrativ capabilă.",
-        en: "Without population data you cannot build a modern state. Statistical science is the instrument through which a weak principality becomes an administratively capable nation.",
+        ro: "Nu poți guverna un teritoriu pe care nu îl poți cuantifica. Recensământul e instrumentul prin care un principat devine un stat capabil să planifice, să taxeze uniform și să mobilizeze forță militară.",
+        en: "You cannot govern a territory you cannot quantify. The census is the instrument through which a principality becomes a state capable of planning, taxing uniformly and mobilizing military force.",
       },
     },
     rebelView: {
@@ -179,8 +179,8 @@ export const seedDots: DotRecord[] = [
       },
     },
     whyItMatters: {
-      ro: "Este primul pas al lizibilității. Statul nu mai operează prin intermediari locali — vrea să vadă direct.",
-      en: "It is the first step of legibility. The state no longer operates through local intermediaries — it wants to see directly.",
+      ro: "Statul român nu a încetat să numere de la 1838 încoace. Fiecare reformă de evidență ulterioară a adăugat un strat nou pe același act fondator: teritoriul aparține celui care îl numără.",
+      en: "Romania has not stopped counting since 1838. Every subsequent records reform added a new layer to the same founding act: the territory belongs to those who count it.",
     },
     consequences: [
       {
@@ -224,8 +224,8 @@ export const seedDots: DotRecord[] = [
       en: "Your file does not describe you — it reduces you. You are the sum of what the state decided to note about you.",
     },
     antithesis: {
-      ro: "Evidența continuă permite prestații sociale: pensii, alocații, asistență medicală presupun să știi cine ești și istoricul ta.",
-      en: "Continuous records enable social benefits: pensions, allowances, healthcare require knowing who you are and your history.",
+      ro: "Statul social cere continuitate. Pensia se calculează pe ani de muncă, alocația cere dovada copilului, tratamentul medical cere istoricul bolii. Fără evidență permanentă nu există drepturi garantate — există doar promisiuni.",
+      en: "The social state demands continuity. Pensions are calculated on years of work, allowances require proof of child, medical treatment requires disease history. Without permanent records there are no guaranteed rights — only promises.",
     },
     synthesis: {
       ro: "Evidența continuă transformă persoana din subiect al unor momente de vizibilitate (recensământ) în obiect al unei supravegheri permanente. Diferența nu e de grad — e de natură.",
@@ -247,12 +247,16 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Legea evidenței militare și civile creează obligativitatea înregistrării permanente.",
-        en: "The law on military and civil records creates the obligation of permanent registration.",
+        ro: "Decret / 1949 — instituie evidența continuă şi permanentă a populației ca obligație administrativă a statului.",
+        en: "Decree / 1949 — establishes continuous and permanent population records as a state administrative obligation.",
       },
       {
-        ro: "Regulamentul de evidență a populației definește categoriile de date care trebuie colectate și actualizate.",
-        en: "The population records regulation defines the categories of data to be collected and updated.",
+        ro: "Regulamentul de evidență / 1949 — stabileşte categoriile obligatorii de date: domiciliu, profesie, stare civilă.",
+        en: "Population records regulation / 1949 — sets mandatory data categories: address, occupation, civil status.",
+      },
+      {
+        ro: "Buletin de identitate obligatoriu — consacră documentul fotografic ca instrument unic de identificare a persoanei.",
+        en: "Mandatory identity card — enshrines the photographic document as the sole instrument of personal identification.",
       },
     ],
     systemLayer: [
@@ -272,8 +276,8 @@ export const seedDots: DotRecord[] = [
     systemView: {
       title: { ro: "Administrație socială modernă", en: "Modern social administration" },
       body: {
-        ro: "Statul social necesită evidență continuă pentru a putea oferi pensii, ajutoare, servicii medicale și educație. Fără dosarul permanent nu poți administra o societate modernă.",
-        en: "The social state requires continuous records to provide pensions, welfare, healthcare and education. Without the permanent file you cannot administer a modern society.",
+        ro: "Statul social nu poate funcționa fără să știe cine are dreptul la ce. Fișa permanentă nu e supraveghere — e infrastructura prin care drepturile sociale devin aplicabile, nu doar declarate.",
+        en: "The social state cannot function without knowing who has the right to what. The permanent file is not surveillance — it is the infrastructure through which social rights become enforceable, not merely declared.",
       },
     },
     rebelView: {
@@ -284,8 +288,8 @@ export const seedDots: DotRecord[] = [
       },
     },
     whyItMatters: {
-      ro: "Primul sistem de supraveghere continuă a persoanei în România. Nu mai e evidență — e urmărire structurală.",
-      en: "The first system of continuous personal surveillance in Romania. It is no longer records — it is structural tracking.",
+      ro: "Sistemul de evidență continuă creat în 1949 e infrastructura pe care se sprijină azi RNEP-ul. Dosarul care nu se închide din 1949 a devenit profilul digital care nu se șterge.",
+      en: "The continuous records system created in 1949 is the infrastructure that supports RNEP today. The file that never closes since 1949 became the digital profile that never deletes.",
     },
     consequences: [
       {
@@ -329,12 +333,12 @@ export const seedDots: DotRecord[] = [
       en: "You are no longer a person with a name and a story — you are a 13-digit series. The number made you less human and more operable.",
     },
     antithesis: {
-      ro: "Identificatorul unic este baza oricărui drept documentat: fără el nu poți dovedi cine ești în fața nicio instituții.",
-      en: "The unique identifier is the foundation of any documented right: without it you cannot prove who you are before any institution.",
+      ro: "Fără un cod comun, sistemul nu poate garanta nimic. Nu poate plăti pensia corect, nu poate identifica pacientul, nu poate executa o hotărâre judecătorească. Numărul nu e un instrument de control — e dovada că dreptul tău depinde de verificabilitatea ta.",
+      en: "Without a common code, the system cannot guarantee anything. It cannot pay the right pension, identify the patient, execute a court ruling. The number is not a control instrument — it is proof that your right depends on your verifiability.",
     },
     synthesis: {
-      ro: "Numărul te-a făcut mai puțin om față de sistem, dar nu mai puțin om față de alți oameni. A făcut ca sistemul să poată opera asupra ta fără să te mai cunoască.",
-      en: "The number made you less human to the system, but not less human to other people. It made it possible for the system to operate upon you without having to know you.",
+      ro: "Înainte de 1978, sistemul trebuia să te cunoască pentru a opera asupra ta. CNP-ul a rupt această condiție. De atunci, e suficient să fii indexat.",
+      en: "Before 1978, the system had to know you to operate upon you. The personal ID broke that condition. Since then, it is enough to be indexed.",
     },
     factualLayer: [
       {
@@ -352,12 +356,12 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Decretul nr. 97/1978 al Consiliului de Stat al RSR.",
-        en: "Decree no. 97/1978 of the State Council of the Socialist Republic of Romania.",
+        ro: "Decretul 97/1978 — instituie codul numeric personal: unic, imuabil, atribuit la naştere, valabil pe viață.",
+        en: "Decree 97/1978 — establishes the personal numeric code: unique, immutable, assigned at birth, valid for life.",
       },
       {
-        ro: "Obligativitatea înscrierii CNP pe toate documentele oficiale.",
-        en: "Mandatory inclusion of the personal ID number on all official documents.",
+        ro: "Decretul 97/1978 — obligă toate instituțiile statului să înregistreze şi să utilizeze CNP ca identificator primar.",
+        en: "Decree 97/1978 — obliges all state institutions to record and use the personal ID as primary identifier.",
       },
     ],
     systemLayer: [
@@ -377,20 +381,20 @@ export const seedDots: DotRecord[] = [
     systemView: {
       title: { ro: "Identificare univocă", en: "Univocal identification" },
       body: {
-        ro: "Eficiența administrativă necesită un identificator unic. Fără el, aceeași persoană apare în mod diferit în fiecare registru — erorile, duplicatele și fraudele sunt inevitabile.",
-        en: "Administrative efficiency requires a unique identifier. Without it, the same person appears differently in each register — errors, duplicates and fraud are inevitable.",
+        ro: "Fără identificator unic, același om apare diferit în fiecare registru. Erorile generează injustiție. Codul numeric personal nu rezolvă o problemă de eficiență — rezolvă o problemă de justiție.",
+        en: "Without a unique identifier, the same person appears differently in each register. Errors generate injustice. The personal numeric code does not solve an efficiency problem — it solves a justice problem.",
       },
     },
     rebelView: {
       title: { ro: "Reducerea la serie", en: "Reduction to a series" },
       body: {
-        ro: "Numărul te-a făcut mai operabil. Acum poți fi procesat, corelat, executat fără ca cineva să te cunoască. CNP-ul nu e un serviciu — e o cheie pentru sistemul care operează asupra ta.",
-        en: "The number made you more operable. Now you can be processed, correlated, executed without anyone knowing you. The personal ID number is not a service — it is a key for the system that operates upon you.",
+        ro: "Numărul a desprins operabilitatea de cunoaștere. Poți fi procesat, corelat, executat fără să fi fost văzut vreodată. E prima infrastructură de operare la distanță.",
+        en: "The number separated operability from knowledge. You can be processed, correlated, executed without ever having been seen. It is the first infrastructure for remote operation.",
       },
     },
     whyItMatters: {
-      ro: "CNP-ul este momentul când interoperabilitatea viitoare devine posibilă. Toate sistemele digitale de azi operează cu CNP-ul drept cheie primară.",
-      en: "The personal ID number is the moment when future interoperability becomes possible. All digital systems today operate with it as the primary key.",
+      ro: "Orice sistem informatic al statului român folosește CNP-ul drept cheie primară. Fiecare bază de date publică din 2025 pornește de la un număr atribuit în 1978.",
+      en: "Every public IT system in Romania uses the personal ID as its primary key. Every public database in 2025 starts from a number assigned in 1978.",
     },
     consequences: [
       {
@@ -435,12 +439,12 @@ export const seedDots: DotRecord[] = [
       en: "Contract and property title are not freedom — they are new forms of visibility and traceability. You are now in the registry of owners, associates, debtors.",
     },
     antithesis: {
-      ro: "Fără proprietate privată documentată nu există economie de piață, nu există antreprenoriat, nu există drepturi reale protejabile.",
-      en: "Without documented private property there is no market economy, no entrepreneurship, no real protectable rights.",
+      ro: "Fără titlu juridic documentat, proprietatea nu există în fața legii — există doar ca fapt. Faptul poate fi negat, contestat, confiscat. Documentul nu e birocrație — e singura formă prin care dreptul devine opozabil.",
+      en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. The document is not bureaucracy — it is the only form through which rights become opposable.",
     },
     synthesis: {
-      ro: "Schimbarea gramaticii juridice extinde libertatea reală — dar o face prin adăugarea unui nou strat de vizibilitate. Libertatea de a deține vine cu obligația de a fi văzut ca deținător.",
-      en: "The change of legal grammar extends real freedom — but does so by adding a new layer of visibility. The freedom to own comes with the obligation to be seen as an owner.",
+      ro: "Libertatea de a deține vine cu obligația de a fi văzut ca deținător. Noul registru nu ți-a dat dreptul — ți-a creat profilul economic.",
+      en: "The freedom to own comes with the obligation to be seen as an owner. The new registry did not give you the right — it created your economic profile.",
     },
     factualLayer: [
       {
@@ -458,16 +462,20 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Constituția din 1991 garantează proprietatea privată și consacră economia de piață.",
-        en: "The 1991 Constitution guarantees private property and enshrines the market economy.",
+        ro: "Legea 15/1990 — reorganizează unitățile economice de stat în regii autonome şi societăți comerciale.",
+        en: "Law 15/1990 — reorganises state economic units into autonomous undertakings and commercial companies.",
       },
       {
-        ro: "Registrul Comerțului devine obligatoriu — orice societate comercială trebuie înregistrată și publicată.",
-        en: "The Trade Registry becomes mandatory — any commercial company must be registered and published.",
+        ro: "Legea 31/1990 — introduce regimul juridic al societăților comerciale şi obligă la înregistrare publică.",
+        en: "Law 31/1990 — introduces the legal regime of commercial companies and obliges public registration.",
       },
       {
-        ro: "Cartea funciară și cadastrul revin ca instrumente juridice active.",
-        en: "The land book and cadastre return as active legal instruments.",
+        ro: "Legea 18/1991 — reactivează fondul funciar ca obiect de titlu, restituire şi evidență cadastrală.",
+        en: "Law 18/1991 — reactivates the land fund as an object of title, restitution and cadastral record.",
+      },
+      {
+        ro: "Constituția / 1991 — consacră proprietatea privată şi garantează economia de piață ca fundament constituțional.",
+        en: "Constitution / 1991 — enshrines private property and guarantees the market economy as constitutional foundation.",
       },
     ],
     systemLayer: [
@@ -487,15 +495,15 @@ export const seedDots: DotRecord[] = [
     systemView: {
       title: { ro: "Construcția statului de drept", en: "Building the rule of law" },
       body: {
-        ro: "Statul democratic modern necesită evidența clară a drepturilor de proprietate, a obligațiilor fiscale și a persoanelor juridice. Fără aceste registre nu există securitate juridică și nici investiție.",
-        en: "The modern democratic state requires clear records of property rights, fiscal obligations and legal persons. Without these registries there is no legal security and no investment.",
+        ro: "Statul de drept nu poate funcționa fără evidența clară a drepturilor de proprietate și a obligațiilor juridice. Fără registre nu există securitate juridică, credit bancar sau investiție privată. Piața nu se construiește pe promisiuni — se construiește pe titluri.",
+        en: "The rule of law cannot function without clear records of property rights and legal obligations. Without registries there is no legal security, no bank credit, no private investment. The market is not built on promises — it is built on titles.",
       },
     },
     rebelView: {
       title: { ro: "Noi registre, nouă vizibilitate", en: "New registries, new visibility" },
       body: {
-        ro: "Am primit libertatea de a deține — dar odată cu ea, am intrat în noi inventare. Acum ești în registrul de proprietari, de asociați, de datornici. Libertatea vine cu un nou strat de trasabilitate.",
-        en: "We received the freedom to own — but along with it, we entered new inventories. Now you are in the registry of owners, associates, debtors. Freedom comes with a new layer of traceability.",
+        ro: "Comunismul te ținea invizibil ca proprietar. Democrația te-a făcut vizibil ca deținător, asociat, debitor, contribuabil. Iluzia era că vizibilitatea asta e libertate. E și libertate — și un nou inventar.",
+        en: "Communism kept you invisible as an owner. Democracy made you visible as a holder, associate, debtor, taxpayer. The illusion was that this visibility was freedom. It is freedom — and a new inventory.",
       },
     },
     whyItMatters: {
@@ -545,12 +553,12 @@ export const seedDots: DotRecord[] = [
       en: "RNEP is not a service — it is a control infrastructure. Your data is now accessible to any authorized institution, without you knowing when and why.",
     },
     antithesis: {
-      ro: "Interoperabilitatea reduce birocrația masiv. Nu mai trebuie să aduci hârtii de la o instituție la alta — sistemul știe deja.",
-      en: "Interoperability massively reduces bureaucracy. You no longer have to bring papers from one institution to another — the system already knows.",
+      ro: "Birocrația ucide prin fricțiune. Fiecare act care trebuie copiat, certificat, tradus și depus din nou e o barieră pentru cetățeni și o sursă de corupție. Interoperabilitatea nu e control — e eliminarea unei forme de violență administrativă cotidiene.",
+      en: "Bureaucracy kills through friction. Every document that must be copied, certified, translated and re-filed is a barrier for citizens and a source of corruption. Interoperability is not control — it is the elimination of a form of daily administrative violence.",
     },
     synthesis: {
-      ro: "RNEP transformă suma dosarelor separate într-un profil integrat. Diferența nu e de cantitate — e de natură. Un sistem care corelează e calitativ diferit de N sisteme izolate.",
-      en: "RNEP transforms the sum of separate files into an integrated profile. The difference is not of quantity — it is of nature. A system that correlates is qualitatively different from N isolated systems.",
+      ro: "RNEP transformă suma dosarelor separate într-un profil integrat. Diferența nu e de cantitate — e de natură. N sisteme izolate știu N bucăți. Un sistem corelat știe tot.",
+      en: "RNEP transforms the sum of separate files into an integrated profile. The difference is not of quantity — it is of nature. N isolated systems know N pieces. A correlated system knows everything.",
     },
     factualLayer: [
       {
@@ -568,12 +576,12 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Legea 677/2001 privind protecția datelor cu caracter personal (transpunerea Directivei europene 95/46/CE).",
-        en: "Law 677/2001 on personal data protection (transposing the European Directive 95/46/CE).",
+        ro: "Legea 677/2001 — introduce cadrul legal pentru prelucrarea datelor personale şi condiționează accesul instituțional.",
+        en: "Law 677/2001 — introduces the legal framework for personal data processing and conditions institutional access.",
       },
       {
-        ro: "Legea 290/2004 — cadrul legal al RNEP și condițiile de acces la date.",
-        en: "Law 290/2004 — the legal framework of RNEP and conditions of data access.",
+        ro: "Legea 290/2004 — instituie Registrul Național de Evidență a Persoanelor ca bază de date unificată a populației.",
+        en: "Law 290/2004 — establishes the National Population Register as the unified database of the population.",
       },
     ],
     systemLayer: [
@@ -593,8 +601,8 @@ export const seedDots: DotRecord[] = [
     systemView: {
       title: { ro: "E-government și servicii integrate", en: "E-government and integrated services" },
       body: {
-        ro: "Interoperabilitatea e singura cale spre servicii publice eficiente. Cetățeanul nu trebuie să care hârtii — sistemul trebuie să funcționeze pentru el.",
-        en: "Interoperability is the only path to efficient public services. The citizen should not have to carry papers — the system should work for them.",
+        ro: "Statul eficient nu cere cetățeanului să îi poarte datele de la o instituție la alta. Interoperabilitatea e condiția de bază pentru servicii publice reale — nu o facilitate tehnică, ci o datorie administrativă.",
+        en: "An efficient state does not ask citizens to carry their own data from one institution to another. Interoperability is the basic condition for real public services — not a technical feature, but an administrative duty.",
       },
     },
     rebelView: {
@@ -650,12 +658,12 @@ export const seedDots: DotRecord[] = [
       en: "Digital identity is not a service — it is an operability infrastructure. With eID you can be processed, verified and executed without physical presence, without papers, without witness.",
     },
     antithesis: {
-      ro: "Identitatea digitală elimină corupția la ghișeu, reduce birocrația la zero, permite accesul la servicii publice din orice locație.",
-      en: "Digital identity eliminates counter corruption, reduces bureaucracy to zero, allows access to public services from any location.",
+      ro: "Corupția la ghișeu trăiește din asimetria de informație: funcționarul știe mai mult decât tine și profită de asta. Identitatea digitală elimină ghișeul. Elimină discreția, negocierea, intermediarul. Dacă asta înseamnă mai puțin spațiu pentru abuz, atunci vizibilitatea e și un instrument de protecție.",
+      en: "Counter corruption lives on information asymmetry: the official knows more than you and profits from that. Digital identity eliminates the counter. It eliminates discretion, negotiation, the intermediary. If that means less space for abuse, then visibility is also a protection instrument.",
     },
     synthesis: {
-      ro: "Identitatea fizico-digitală este apogeul unui proces de 200 de ani. Nu am ajuns dintr-un salt — am fost făcuți treptat mai lizibili, mai indexabili, mai procesabili. Istoria modernă este povestea creșterii lizibilității persoanei în fața sistemului.",
-      en: "The physico-digital identity is the culmination of a 200-year process. We did not get here in a leap — we were made gradually more legible, more indexable, more processable. Modern history is the story of the growing legibility of the person before the system.",
+      ro: "Nu am ajuns la identitatea digitală dintr-un salt. Am fost făcuți treptat mai lizibili, mai indexabili, mai procesabili — câte un prag pe rând. Istoria modernă este istoria creșterii operabilității persoanei.",
+      en: "We did not arrive at digital identity in a leap. We were made gradually more legible, more indexable, more processable — one threshold at a time. Modern history is the history of the growing operability of the person.",
     },
     factualLayer: [
       {
@@ -673,16 +681,16 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Regulamentul EU 910/2014 eIDAS (Electronic Identification and Authentication Services).",
-        en: "EU Regulation 910/2014 eIDAS (Electronic Identification and Authentication Services).",
+        ro: "OUG 97/2005 (republicată) — stabileşte regimul național al documentelor de identitate electronice ale cetățenilor.",
+        en: "GEO 97/2005 (republished) — sets the national regime for electronic identity documents of citizens.",
       },
       {
-        ro: "Regulamentul EU 2024/1183 eIDAS 2.0 — portofelul de identitate digitală european.",
-        en: "EU Regulation 2024/1183 eIDAS 2.0 — the European digital identity wallet.",
+        ro: "Regulamentul UE 910/2014 eIDAS — consacră identificarea electronică şi serviciile de încredere ca instrumente juridice recunoscute.",
+        en: "EU Regulation 910/2014 eIDAS — enshrines electronic identification and trust services as recognised legal instruments.",
       },
       {
-        ro: "OUG 97/2005 (republicată) — documentele de identitate ale cetățenilor români.",
-        en: "GEO 97/2005 (republished) — identity documents of Romanian citizens.",
+        ro: "Regulamentul UE 2024/1183 eIDAS 2.0 — instituie portofelul digital european ca infrastructură comună de identitate, obligatorie din 2026.",
+        en: "EU Regulation 2024/1183 eIDAS 2.0 — establishes the European digital wallet as a common identity infrastructure, mandatory from 2026.",
       },
     ],
     systemLayer: [
@@ -709,13 +717,13 @@ export const seedDots: DotRecord[] = [
     rebelView: {
       title: { ro: "Operabilitate totală", en: "Total operability" },
       body: {
-        ro: "Acum poți fi și operat digital. Procesul început cu recensământul din 1838 s-a încheiat: ești nu doar vizibil, ci și la distanță zero față de sistem. Nu mai trebuie să dovedești cine ești — poți fi accesat.",
-        en: "Now you can also be operated digitally. The process that began with the 1838 census is complete: you are not just visible, but at zero distance from the system. You no longer need to prove who you are — you can be accessed.",
+        ro: "Acum poți fi și operat digital. Procesul început cu recensământul din 1838 s-a încheiat: ești nu doar vizibil, ci și la distanță zero față de sistem. Prezența fizică nu mai e necesară nici pentru a fi servit, nici pentru a fi executat.",
+        en: "Now you can also be operated digitally. The process that began with the 1838 census is complete: you are not just visible, but at zero distance from the system. Physical presence is no longer necessary to be served — or to be executed.",
       },
     },
     whyItMatters: {
-      ro: "Ultimul punct din timeline — deocamdată. Fuziunea identității fizice cu cea digitală este apogeul procesului de 200 de ani de creștere a lizibilității persoanei.",
-      en: "The last point in the timeline — for now. The fusion of physical with digital identity is the culmination of the 200-year process of growing personal legibility.",
+      ro: "Portofelul digital european (eIDAS 2.0) este obligatoriu din 2026. Fiecare cetățean UE va fi un nod în același sistem. Nu e o predicție — e un calendar.",
+      en: "The European digital wallet (eIDAS 2.0) is mandatory from 2026. Every EU citizen will be a node in the same system. This is not a prediction — it is a calendar.",
     },
     consequences: [
       {

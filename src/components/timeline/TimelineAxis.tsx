@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { Locale, DotRecord } from "@/lib/types";
 import type { Dictionary } from "@/lib/i18n/getDictionary";
 import "@/styles/timeline.scss";
@@ -12,16 +13,21 @@ type Props = {
 };
 
 export default function TimelineAxis({ dots, locale, dict }: Props) {
+  const pathname = usePathname();
+
   return (
     <ol className="timeline-axis list-none p-0 m-0" aria-label={dict.timeline.title}>
-      {dots.map((dot) => {
+      {dots.map((dot, index) => {
         const slug = dot.slug?.[locale] ?? dot.slug?.ro ?? dot.id;
         const title = dot.title?.[locale] ?? dot.title?.ro ?? "";
         const shortLine = dot.shortLine?.[locale] ?? dot.shortLine?.ro ?? "";
+        const isActive = pathname === `/${locale}/dot/${slug}`;
+        const seq = String(index + 1).padStart(2, "0");
 
         return (
-          <li key={dot.id} className="timeline-entry">
-            <span className="timeline-dot-marker is-published" aria-hidden />
+          <li key={dot.id} className={`timeline-entry${isActive ? " is-active" : ""}`}>
+            <span className={`timeline-dot-marker is-published${isActive ? " is-active" : ""}`} aria-hidden />
+            <span className="timeline-entry-seq" aria-hidden>{seq}</span>
 
             <div className="flex flex-col gap-1.5">
               {/* Period stamp — date of registration */}
