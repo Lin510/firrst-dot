@@ -136,7 +136,7 @@ export const seedDots: DotRecord[] = [
         en: "The Organic Regulation (1831-1832) creates the centralized administrative framework and mandates systematic data collection.",
       },
       {
-        ro: "Recensământul din 1838 în Valahia — primul care încearcă să numere întreaga populație, nu doar contribuabilii directi.",
+        ro: "Recensământul din 1838 în Valahia — primul care încearcă să numere întreaga populație, nu doar contribuabilii direcți.",
         en: "The 1838 census in Wallachia — the first attempting to count the entire population, not just direct taxpayers.",
       },
     ],
@@ -146,7 +146,7 @@ export const seedDots: DotRecord[] = [
         en: "Organic Regulation / 1831 — establishes the obligation of centralised administrative records across the Principalities.",
       },
       {
-        ro: "Recensamânt / 1838 — introduce prima operație sistematică de înregistrare a populației ca resursă fiscală şi militară.",
+        ro: "Recensământ / 1838 — introduce prima operație sistematică de înregistrare a populației ca resursă fiscală și militară.",
         en: "Census / 1838 — introduces the first systematic operation of recording the population as a fiscal and military resource.",
       },
     ],
@@ -193,7 +193,7 @@ export const seedDots: DotRecord[] = [
       },
     ],
     themeSlugs: ["identitate", "fiscal", "administratie", "vizibilitate"],
-    legalRefIds: ["regulamentul-organic-1831", "decretul-censura-1838"],
+    legalRefIds: ["regulamentul-organic-1831", "recensamantul-1838"],
     sourceIds: [],
     regimeId: "principate",
     tags: ["recensamant", "statistica", "populatie"],
@@ -297,7 +297,7 @@ export const seedDots: DotRecord[] = [
         en: "Internal mobility becomes conditioned on state approval.",
       },
       {
-        ro: "Creează infrastructura sociotehnica pentru CNP — identificatorul unic personal care vine în 1978.",
+        ro: "Creează infrastructura sociotehnică pentru CNP — identificatorul unic personal care vine în 1978.",
         en: "Creates the sociotechnical infrastructure for the personal numeric code that comes in 1978.",
       },
     ],
@@ -722,8 +722,8 @@ export const seedDots: DotRecord[] = [
       },
     },
     whyItMatters: {
-      ro: "Portofelul digital european (eIDAS 2.0) este obligatoriu din 2026. Fiecare cetățean UE va fi un nod în același sistem. Nu e o predicție — e un calendar.",
-      en: "The European digital wallet (eIDAS 2.0) is mandatory from 2026. Every EU citizen will be a node in the same system. This is not a prediction — it is a calendar.",
+      ro: "Portofelul digital european (eIDAS 2.0) intră în faza de implementare obligatorie din 2026. Cetățenii UE intră treptat într-un cadru comun de identitate interoperabilă. Nu e o predicție — e un calendar.",
+      en: "The European digital wallet (eIDAS 2.0) enters mandatory implementation from 2026. EU citizens gradually move into a shared interoperable identity framework. This is not a prediction — it is a calendar.",
     },
     consequences: [
       {

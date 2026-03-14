@@ -93,6 +93,9 @@ async function seed(): Promise<void> {
 
   console.log("📦  Seeding collections…");
 
+  // one-time cleanup: renamed decretul-censura-1838 → recensamantul-1838
+  await LegalReferenceModel.deleteMany({ id: "decretul-censura-1838" });
+
   await upsertById(RegimeModel, seedRegimes, "regimes");
 
   await upsertBySlug(ThemeModel, seedThemes, "themes");

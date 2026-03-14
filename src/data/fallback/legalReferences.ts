@@ -54,7 +54,7 @@ export const seedLegalReferences: LegalReference[] = [
     published: true,
   },
   {
-    id: "decretul-censura-1838",
+    id: "recensamantul-1838",
     type: "decret",
     year: 1838,
     issuedBy: { ro: "Regulamentul Organic / Administrația fanariotă-rusă", en: "Organic Regulation / Phanariot-Russian administration" },
