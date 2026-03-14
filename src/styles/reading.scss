@@ -1,0 +1,376 @@
+/* Reading surface — bento dot detail layout */
+
+/* ── Container ─────────────────────────────────────────────── */
+
+.bento-dot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ── Base cell ───────────────────────────────────────────────── */
+
+.bento-cell {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 6px;
+  padding: 1.75rem;
+
+  @media (min-width: 768px) {
+    padding: 2.25rem;
+  }
+}
+
+/* ── Hero ───────────────────────────────────────────────────── */
+
+.bento-hero {
+  background: var(--color-parchment-dim);
+  border-color: var(--color-border);
+  padding: 2.25rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 3.5rem;
+  }
+
+  .period-label {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-ink-subtle);
+    margin-bottom: 0.875rem;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    line-height: 1.15;
+  }
+
+  .short-line {
+    font-size: 1.0625rem;
+    color: var(--color-ink-muted);
+    font-style: italic;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 64ch;
+  }
+}
+
+/* ── Summary ─────────────────────────────────────────────────── */
+
+.bento-summary {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 0 0;
+
+  p {
+    color: var(--color-ink-muted);
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 72ch;
+  }
+}
+
+/* ── Tension: Teză ↔ Antiteză ─────────────────────────────────── */
+
+.bento-tension {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bento-thesis {
+  background: color-mix(in srgb, var(--color-accent) 8%, var(--color-surface));
+  border-color: var(--color-accent-muted);
+  border-top: 3px solid var(--color-accent);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.bento-antithesis {
+  background: color-mix(in srgb, var(--color-slate) 8%, var(--color-surface));
+  border-color: color-mix(in srgb, var(--color-slate-dim) 30%, var(--color-border-subtle));
+  border-top: 3px solid var(--color-slate-dim);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.tension-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  .bento-thesis & {
+    color: var(--color-accent);
+  }
+
+  .bento-antithesis & {
+    color: var(--color-slate-dim);
+  }
+}
+
+.tension-claim {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+  font-style: italic;
+  margin: 0 0 0.875rem;
+}
+
+.tension-body {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  margin: 0;
+  padding-top: 0.875rem;
+
+  .bento-thesis & {
+    border-top: 1px solid var(--color-accent-muted);
+    color: color-mix(in srgb, var(--color-accent) 60%, var(--color-ink-muted));
+  }
+
+  .bento-antithesis & {
+    border-top: 1px solid color-mix(in srgb, var(--color-slate-dim) 25%, var(--color-border-subtle));
+    color: color-mix(in srgb, var(--color-slate-dim) 55%, var(--color-ink-muted));
+  }
+}
+
+/* ── Synthesis connector ─────────────────────────────────────── */
+
+.bento-synthesis-connector {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.25rem 0;
+  margin-top: -0.25rem;
+
+  &::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-accent-muted));
+  }
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to left, transparent, var(--color-accent-muted));
+  }
+
+  span {
+    font-family: var(--font-ui);
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    white-space: nowrap;
+  }
+}
+
+/* ── Synthesis ───────────────────────────────────────────────── */
+
+.bento-synthesis {
+  background: color-mix(in srgb, var(--color-accent) 5%, var(--color-parchment-dim));
+  border-top: 2px solid var(--color-accent-muted);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+
+  .synthesis-label {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: 0.5625rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--color-ink);
+    font-style: italic;
+    margin: 0;
+    max-width: 72ch;
+
+    &::before {
+      content: '«\00a0';
+      color: var(--color-accent-light);
+      font-style: normal;
+    }
+
+    &::after {
+      content: '\00a0»';
+      color: var(--color-accent-light);
+      font-style: normal;
+    }
+  }
+}
+
+/* ── 3 Layers ────────────────────────────────────────────────── */
+
+.bento-layers {
+  display: grid;
+  gap: 0.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bento-layer {
+  padding: 1.5rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  li {
+    font-size: 0.8125rem;
+    color: var(--color-ink-muted);
+    line-height: 1.65;
+    padding-left: 1rem;
+    position: relative;
+
+    &::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--color-border);
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* ── Associations ────────────────────────────────────────────── */
+
+.bento-associations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.assoc-chip {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.assoc-regime {
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, var(--color-slate) 12%, var(--color-surface));
+  border-color: color-mix(in srgb, var(--color-slate-dim) 25%, var(--color-border));
+  color: var(--color-slate-dim);
+}
+
+.assoc-theme {
+  background: color-mix(in srgb, var(--color-accent) 8%, var(--color-surface));
+  border-color: var(--color-accent-muted);
+  color: var(--color-accent);
+}
+
+.assoc-legal {
+  background: color-mix(in srgb, var(--color-ink) 5%, var(--color-surface));
+  border-color: var(--color-border);
+  color: var(--color-ink-muted);
+}
+
+/* ── Why it matters ──────────────────────────────────────────── */
+
+.bento-why {
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--color-border-subtle);
+  border-radius: 0;
+  padding: 1.5rem 0 0.5rem;
+
+  p {
+    color: var(--color-ink-muted);
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    max-width: 68ch;
+  }
+}
+
+/* ── Sources ─────────────────────────────────────────────────── */
+
+.bento-sources {
+  padding: 0.5rem 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  a {
+    font-size: 0.875rem;
+  }
+}
+
+/* ── Tags ────────────────────────────────────────────────────── */
+
+.bento-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.dot-tag {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-ink-subtle);
+  border-radius: 2px;
+}
+
+/* ── Layer label utility (shared) ─────────────────────────────── */
+
+.layer-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+  margin: 0 0 0.75rem;
+}
+

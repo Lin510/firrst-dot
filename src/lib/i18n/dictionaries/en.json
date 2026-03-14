@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "timeline": "Timeline",
+    "about": "Method"
+  },
+  "home": {
+    "question": "When did history stop being lived and start being administered?",
+    "subline": "A layered reading of legal, institutional, and systemic mutations.",
+    "cta": "Explore the timeline"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "noResults": "No dots match the selected filters."
+  },
+  "dot": {
+    "thesis": "Thesis",
+    "antithesis": "Antithesis",
+    "factualLayer": "What happened",
+    "legalLayer": "Legal and institutional framework",
+    "systemLayer": "What became possible",
+    "systemView": "The system's view",
+    "rebelView": "The dissenter's view",
+    "synthesis": "Synthesis",
+    "whyItMatters": "Why it matters",
+    "consequences": "Consequences",
+    "sources": "Sources",
+    "relatedDots": "Related dots",
+    "readMore": "Read more",
+    "collapse": "Collapse"
+  },
+  "about": {
+    "title": "Method",
+    "tagline": "How this project reads the world"
+  },
+  "locale": {
+    "switch": "Română"
+  }
+}

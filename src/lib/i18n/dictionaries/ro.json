@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "timeline": "Cronologie",
+    "about": "Metodă"
+  },
+  "home": {
+    "question": "Când a încetat istoria să fie trăită și a început să fie administrată?",
+    "subline": "O lectură stratificată a mutațiilor juridice, instituționale și sistemice.",
+    "cta": "Explorează cronologia"
+  },
+  "timeline": {
+    "title": "Cronologie",
+    "noResults": "Niciun punct nu corespunde filtrelor selectate."
+  },
+  "dot": {
+    "thesis": "Teză",
+    "antithesis": "Antiteză",
+    "factualLayer": "Ce s-a întâmplat",
+    "legalLayer": "Cadrul juridic și instituțional",
+    "systemLayer": "Ce a devenit posibil",
+    "systemView": "Viziunea sistemului",
+    "rebelView": "Viziunea celui contestatar",
+    "synthesis": "Sinteză",
+    "whyItMatters": "De ce contează",
+    "consequences": "Consecințe",
+    "sources": "Surse",
+    "relatedDots": "Puncte conexe",
+    "readMore": "Citește mai mult",
+    "collapse": "Restrânge"
+  },
+  "about": {
+    "title": "Metodă",
+    "tagline": "Cum citim lumea în acest proiect"
+  },
+  "locale": {
+    "switch": "English"
+  }
+}

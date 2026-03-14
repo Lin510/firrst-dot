@@ -1,0 +1,90 @@
+/* Timeline — registry / ledger visual language */
+
+/*
+  Metric system:
+  --_gutter: space left of content (where spine + marker live)
+  --_spine:  position of the vertical line within the gutter
+  marker is a filled square, not a circle — precision over decoration
+*/
+
+.timeline-axis {
+  --_gutter: 2.75rem;
+  --_spine:  0.875rem;
+
+  position: relative;
+  padding-left: var(--_gutter);
+
+  /* Perforated spine — dashes, not a soft gradient line */
+  &::before {
+    content: "";
+    position: absolute;
+    left: var(--_spine);
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--color-border) 0,
+      var(--color-border) 3px,
+      transparent 3px,
+      transparent 7px
+    );
+  }
+}
+
+.timeline-entry {
+  position: relative;
+  padding: 2rem 0 2.5rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+  transition: background 0.15s ease;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  /* Horizontal arm — spine → content */
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--_spine) - var(--_gutter));
+    top: calc(2.375rem);   /* vertically centered on the marker */
+    width: calc(var(--_gutter) - var(--_spine) - 2px);
+    height: 1px;
+    background: var(--color-border);
+    transition: background 0.15s ease;
+  }
+
+  &:hover::before {
+    background: var(--color-accent-muted);
+  }
+}
+
+/* Square registry mark — not a pebble, a data point */
+.timeline-dot-marker {
+  position: absolute;
+  left: calc(var(--_spine) - var(--_gutter) - 4px);
+  top: 2.1875rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;                     /* square = registry, not ornament */
+  background: var(--color-parchment);
+  border: 1.5px solid var(--color-border);
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  &.is-published {
+    background: var(--color-parchment-dim);
+    border-color: var(--color-ink-subtle);
+  }
+
+  &.is-active {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}
+
+/* Hover: the whole entry activates the mark */
+.timeline-entry:hover .timeline-dot-marker.is-published {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
