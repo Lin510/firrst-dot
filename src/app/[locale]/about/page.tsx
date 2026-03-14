@@ -58,6 +58,17 @@ export default async function AboutPage({ params }: Props) {
 
         <section>
           <h2 className="text-sm font-sans font-semibold tracking-widest uppercase text-[var(--color-accent)] mb-4">
+            {isRo ? "Praguri absorbite de narațiuni mai mari" : "Thresholds absorbed by larger narratives"}
+          </h2>
+          <p className="text-[var(--color-ink-muted)]">
+            {isRo
+              ? "Unele praguri nu lipsesc pentru că ar fi minore, ci pentru că au fost absorbite de narațiuni mai mari — unire, reformă, modernizare, emancipare. Metoda proiectului încearcă să le citească din nou, ca mutații de infrastructură."
+              : "Some thresholds are not missing because they are minor, but because they were absorbed by larger narratives — unification, reform, modernization, emancipation. The project's method attempts to re-read them as infrastructure mutations."}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-sm font-sans font-semibold tracking-widest uppercase text-[var(--color-accent)] mb-4">
             {isRo ? "Ce nu este acest proiect" : "What this project is not"}
           </h2>
           <p className="text-[var(--color-ink-muted)]">
