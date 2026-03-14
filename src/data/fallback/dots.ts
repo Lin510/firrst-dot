@@ -48,8 +48,8 @@ export const seedDots: DotRecord[] = [
     ],
     legalLayer: [
       {
-        ro: "Registre parohiale — singura formă de evidență recunoscută. Fără obligație de cod. Fără jurisdicție centrală.",
-        en: "Parish registers — the only recognised form of record. No code obligation. No central jurisdiction.",
+        ro: "Registre parohiale (sec. XVII–XIX) — singura formă extinsă de înregistrare; fără centralizare de stat, fără identificator comun, fără opozabilitate dincolo de parohie.",
+        en: "Parish registers (17th–19th c.) — the only extended form of record; no state centralization, no common identifier, no opposability beyond the parish.",
       },
       {
         ro: "Drept cutumiar / hrisoave — reglementează posesia şi proprietatea fără cadastru unificat şi fără titlu opozabil.",
@@ -86,8 +86,8 @@ export const seedDots: DotRecord[] = [
     },
     consequences: [
       {
-        ro: "Nicio consecință instituțională directă — dar stabilește baza de referință față de care orice mutație ulterioară se măsoară.",
-        en: "No direct institutional consequence — but establishes the baseline against which all subsequent mutations are measured.",
+        ro: "Absența evidenței centrale face imposibilă fiscalitatea uniformă, recrutarea sistematică și orice drept garantat dincolo de comunitate. Puterea depinde de intermediari locali pe care nu îi controlează.",
+        en: "The absence of central records makes uniform taxation, systematic conscription and any right guaranteed beyond the community impossible. Power depends on local intermediaries it does not control.",
       },
     ],
     themeSlugs: ["identitate", "vizibilitate", "administratie"],
@@ -179,8 +179,8 @@ export const seedDots: DotRecord[] = [
       },
     },
     whyItMatters: {
-      ro: "Statul român nu a încetat să numere de la 1838 încoace. Fiecare reformă de evidență ulterioară a adăugat un strat nou pe același act fondator: teritoriul aparține celui care îl numără.",
-      en: "Romania has not stopped counting since 1838. Every subsequent records reform added a new layer to the same founding act: the territory belongs to those who count it.",
+      ro: "Statul român nu a încetat să numere de la 1838 încoace. Fiecare reformă de evidență ulterioară a adăugat un strat nou pe același act fondator: cunoașterea populației devine condiție permanentă a guvernării.",
+      en: "Romania has not stopped counting since 1838. Every subsequent records reform added a new layer to the same founding act: knowledge of the population becomes a permanent condition of governance.",
     },
     consequences: [
       {
@@ -216,8 +216,8 @@ export const seedDots: DotRecord[] = [
       en: "Your file no longer closes. It stays open for life.",
     },
     summary: {
-      ro: "Regimul comunist instaurează evidența continuă a populației. Nu mai e vorba de recensământ periodic — fiecare mișcare, schimbare de domiciliu, stare civilă sau profesie intră în fișa permanentă de evidență. Statul socialist vrea să știe unde ești în orice moment.",
-      en: "The communist regime establishes continuous population surveillance. It is no longer about periodic census — every movement, change of address, civil status or profession enters the permanent record file. The socialist state wants to know where you are at any moment.",
+      ro: "Regimul comunist instaurează evidența continuă a populației. Nu mai e vorba de recensământ periodic — fiecare mișcare, schimbare de domiciliu, stare civilă sau profesie intră în fișa permanentă de evidență. Statul socialist vrea să știe unde ești permanent, nu doar la momente discrete.",
+      en: "The communist regime establishes continuous population surveillance. It is no longer about periodic census — every movement, change of address, civil status or profession enters the permanent record file. The socialist state wants to know where you are permanently, not just at discrete moments.",
     },
     thesis: {
       ro: "Dosarul tău nu te descrie — te reduce. Ești suma a ceea ce statul a decis să noteze despre tine.",
@@ -255,8 +255,8 @@ export const seedDots: DotRecord[] = [
         en: "Population records regulation / 1949 — sets mandatory data categories: address, occupation, civil status.",
       },
       {
-        ro: "Buletin de identitate obligatoriu — consacră documentul fotografic ca instrument unic de identificare a persoanei.",
-        en: "Mandatory identity card — enshrines the photographic document as the sole instrument of personal identification.",
+        ro: "Decretul 25/1952 — consacră buletinul de identitate cu fotografie ca document unic obligatoriu de identificare a persoanei pe întreg teritoriul național.",
+        en: "Decree 25/1952 — enshrines the photo identity card as the sole mandatory document of personal identification across the national territory.",
       },
     ],
     systemLayer: [
@@ -350,8 +350,8 @@ export const seedDots: DotRecord[] = [
         en: "The code contains: sex, date of birth, county, sequence number, check digit.",
       },
       {
-        ro: "Toate instituțiile statului adoptă CNP-ul ca identificator primar.",
-        en: "All state institutions adopt the personal ID number as the primary identifier.",
+        ro: "CNP-ul devine identificatorul comun al infrastructurii publice: registre, dosare medicale, acte juridice, baze de date administrative.",
+        en: "The personal ID number becomes the common identifier of public infrastructure: registries, medical records, legal documents, administrative databases.",
       },
     ],
     legalLayer: [
@@ -393,8 +393,8 @@ export const seedDots: DotRecord[] = [
       },
     },
     whyItMatters: {
-      ro: "Orice sistem informatic al statului român folosește CNP-ul drept cheie primară. Fiecare bază de date publică din 2025 pornește de la un număr atribuit în 1978.",
-      en: "Every public IT system in Romania uses the personal ID as its primary key. Every public database in 2025 starts from a number assigned in 1978.",
+      ro: "CNP-ul este cheia primară a infrastructurii publice române. Fiecare bază de date a statului din 2025 pornește de la un număr atribuit la naștere în 1978.",
+      en: "The personal ID number is the primary key of Romanian public infrastructure. Every state database in 2025 starts from a number assigned at birth in 1978.",
     },
     consequences: [
       {
@@ -431,16 +431,16 @@ export const seedDots: DotRecord[] = [
       en: "You received the right to title. You entered the registry of holders.",
     },
     summary: {
-      ro: "Prăbușirea comunismului aduce o revoluție juridică: legile proprietății private, ale societăților comerciale, ale contractelor libere rescriu raportul dintre persoană și sistem. Statul nu mai e singurul proprietar — oamenii intră în registre noi: imobiliare, comerciale, fiscale private.",
-      en: "The collapse of communism brings a legal revolution: laws on private property, commercial companies, free contracts rewrite the relationship between person and system. The state is no longer the sole owner — people enter new registries: real estate, commercial, private fiscal.",
+      ro: "Prăbușirea comunismului aduce o mutație juridică structurală: prin legile din 1990–1991, persoana intră pentru prima dată în registrele proprietarilor, asociaților și debitorilor. Nu mai este vizibilă doar ca cetățean — devine vizibilă și ca actor economic cu titluri și obligații opozabile.",
+      en: "The collapse of communism brings a structural legal mutation: through the laws of 1990–1991, the person enters for the first time the registries of owners, associates and debtors. They are no longer visible only as a citizen — they become visible also as an economic actor with opposable titles and obligations.",
     },
     thesis: {
-      ro: "Contractul și titlul de proprietate nu sunt libertate — sunt noi forme de vizibilitate și trasabilitate. Ești acum în registrul de proprietari, de asociați, de debitori.",
-      en: "Contract and property title are not freedom — they are new forms of visibility and traceability. You are now in the registry of owners, associates, debtors.",
+      ro: "Titlul de proprietate nu e libertate simplă — e intrarea în registrul deținătorilor. Acum poți fi urmărit, executat și verificat nu pentru cine ești, ci pentru ce deții.",
+      en: "The property title is not simple freedom — it is entry into the registry of holders. Now you can be tracked, executed and verified not for who you are, but for what you hold.",
     },
     antithesis: {
-      ro: "Fără titlu juridic documentat, proprietatea nu există în fața legii — există doar ca fapt. Faptul poate fi negat, contestat, confiscat. Documentul nu e birocrație — e singura formă prin care dreptul devine opozabil.",
-      en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. The document is not bureaucracy — it is the only form through which rights become opposable.",
+      ro: "Fără titlu juridic documentat, proprietatea nu există în fața legii — există doar ca fapt. Faptul poate fi negat, contestat, confiscat. Registrele nu sunt un inventar al obedienței — sunt singura formă prin care dreptul privat devine apărabil.",
+      en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. Registries are not an inventory of obedience — they are the only form through which private rights become defensible.",
     },
     synthesis: {
       ro: "Înainte de 1990, nu exista un regim juridic generalizat al proprietății private — nu era ce de profilat. Legea din 1990 nu a rezolvat doar proprietatea: a creat profilul economic al persoanei. De atunci, a deține înseamnă a fi identificat ca deținător.",
@@ -516,8 +516,8 @@ export const seedDots: DotRecord[] = [
         en: "Creates the foundation for the real estate market, banking system and modern taxation.",
       },
       {
-        ro: "Multiplică numărul de registre în care o persoană apare — acum ești vizibil simultan în mai multe sisteme.",
-        en: "Multiplies the number of registries in which a person appears — now you are visible simultaneously in multiple systems.",
+        ro: "Autoritatea fiscală câștigă un nou punct de intrare: proprietatea privată creează automat obligații fiscale identificabile și urmăribile. Executarea silită devine posibilă la scară generalizată.",
+        en: "The fiscal authority gains a new entry point: private property automatically creates identifiable and traceable tax obligations. Enforcement by execution becomes possible at a generalized scale.",
       },
     ],
     themeSlugs: ["proprietate", "fiscal", "lege", "vizibilitate"],
@@ -545,8 +545,8 @@ export const seedDots: DotRecord[] = [
       en: "N separate files become a single profile. Without your knowledge.",
     },
     summary: {
-      ro: "Legea 290/2004 creează Registrul Național de Evidență a Persoanelor — o bază de date unificată care conectează toate înregistrările anterioare prin CNP. Nu mai sunt dosare separate — acum există un profil digital unic, accesibil tuturor instituțiilor de stat.",
-      en: "Law 290/2004 creates the National Register of Population Records — a unified database that connects all previous records through the personal ID number. There are no longer separate files — now there is a single digital profile, accessible to all state institutions.",
+      ro: "Legea 290/2004 creează Registrul Național de Evidență a Persoanelor — o bază de date unificată care conectează toate înregistrările anterioare prin CNP. Nu mai sunt dosare separate — acum există un profil digital unic, accesibil instituțiilor autorizate ale statului.",
+      en: "Law 290/2004 creates the National Register of Population Records — a unified database that connects all previous records through the personal ID number. There are no longer separate files — now there is a single digital profile, accessible to authorised state institutions.",
     },
     thesis: {
       ro: "RNEP nu e un serviciu — e o infrastructură de control. Datele tale sunt acum accesibile oricărei instituții autorizate, fără ca tu să știi când și de ce.",
@@ -566,12 +566,12 @@ export const seedDots: DotRecord[] = [
         en: "Law 290/2004 creates the RNEP — National Register of Population Records.",
       },
       {
-        ro: "Informatizarea Ministerului de Interne — digitaliz area tuturor evidențelor de stare civilă și domiciliu.",
+        ro: "Informatizarea Ministerului de Interne — digitalizarea tuturor evidențelor de stare civilă și domiciliu.",
         en: "Digitization of the Ministry of Internal Affairs — digitalization of all civil status and address records.",
       },
       {
-        ro: "Noua carte de identitate electronică (din 2001) conține date digitale citibile de mașini.",
-        en: "The new electronic identity card (from 2001) contains machine-readable digital data.",
+        ro: "Cărțile de identitate emise din 2001 conțin date digitale citibile de mașini — precondiție tehnică pentru interoperabilitatea RNEP.",
+        en: "Identity cards issued from 2001 contain machine-readable digital data — a technical precondition for RNEP interoperability.",
       },
     ],
     legalLayer: [
@@ -627,7 +627,7 @@ export const seedDots: DotRecord[] = [
       },
     ],
     themeSlugs: ["digital", "identitate", "vizibilitate", "administratie"],
-    legalRefIds: ["legea-rnep-2004", "legea-evidentei-1996"],
+    legalRefIds: ["legea-677-2001", "legea-rnep-2004"],
     sourceIds: [],
     regimeId: "digital",
     tags: ["RNEP", "interoperabilitate", "date-personale", "e-government"],
@@ -717,8 +717,8 @@ export const seedDots: DotRecord[] = [
     rebelView: {
       title: { ro: "Operabilitate totală", en: "Total operability" },
       body: {
-        ro: "Acum poți fi și operat digital. Procesul început cu recensământul din 1838 s-a încheiat: ești nu doar vizibil, ci și la distanță zero față de sistem. Prezența fizică nu mai e necesară nici pentru a fi servit, nici pentru a fi executat.",
-        en: "Now you can also be operated digitally. The process that began with the 1838 census is complete: you are not just visible, but at zero distance from the system. Physical presence is no longer necessary to be served — or to be executed.",
+        ro: "Acum poți fi și operat digital. Procesul care a început cu recensământul din 1838 a ajuns la o primă formă completă: ești nu doar vizibil, ci și la distanță zero față de sistem. Prezența fizică nu mai e necesară nici pentru a fi servit, nici pentru a fi executat.",
+        en: "Now you can also be operated digitally. The process that began with the 1838 census has reached a first complete form: you are not just visible, but at zero distance from the system. Physical presence is no longer necessary to be served — or to be executed.",
       },
     },
     whyItMatters: {
@@ -740,7 +740,7 @@ export const seedDots: DotRecord[] = [
     sourceIds: [],
     regimeId: "digital",
     tags: ["eID", "CEI", "eIDAS", "identitate-digitala", "biometric"],
-    relatedIds: ["dot-rnep-2005"],
+    relatedIds: ["dot-rnep-2005", "dot-cnp-1978"],
     published: true,
   },
 ];

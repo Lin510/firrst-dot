@@ -243,4 +243,22 @@ export const seedLegalReferences: LegalReference[] = [
     countryCode: "EU",
     published: true,
   },
+  {
+    id: "legea-677-2001",
+    type: "lege",
+    number: "nr. 677/2001",
+    year: 2001,
+    issuedBy: { ro: "Parlamentul României", en: "Romanian Parliament" },
+    title: {
+      ro: "Legea nr. 677/2001 pentru protecția persoanelor cu privire la prelucrarea datelor cu caracter personal",
+      en: "Law no. 677/2001 on the protection of persons regarding the processing of personal data",
+    },
+    excerpt: {
+      ro: "Primul cadru legal român de protecție a datelor personale. Condiționează accesul instituțional la datele din registre și introduce principiile de legalitate, proporționalitate și consimțământ în prelucrarea datelor cu caracter personal.",
+      en: "Romania's first legal framework for personal data protection. Conditions institutional access to registry data and introduces the principles of legality, proportionality and consent in the processing of personal data.",
+    },
+    href: "https://legislatie.just.ro",
+    countryCode: "RO",
+    published: true,
+  },
 ];
