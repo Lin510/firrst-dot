@@ -201,7 +201,117 @@ export const seedDots: DotRecord[] = [
     published: true,
   },
 
-  // ─── DOT 3: Evidența centrală 1949 ──────────────────────────
+  // ─── DOT 3: Starea civilă de stat 1864 ───────────────────────
+  {
+    id: "dot-starea-civila-1864",
+    slug: { ro: "starea-civila-1864", en: "civil-registry-1864" },
+    title: {
+      ro: "Starea civilă devine de stat",
+      en: "Civil status becomes state-managed",
+    },
+    periodLabel: { ro: "1864–1865", en: "1864–1865" },
+    sortYear: 1864,
+    endYear: 1865,
+    shortLine: {
+      ro: "Nu mai exiști doar în memoria comunității. Exiști și în registrul statului.",
+      en: "You no longer exist only in community memory. You exist also in the state register.",
+    },
+    summary: {
+      ro: "Sub Cuza, persoana civilă începe să iasă din evidența locală și confesională și să intre într-o formă administrativă unificată. Nu este încă un identificator unic. Este însă prima mare tentativă de serializare administrativă a identității civile.",
+      en: "Under Cuza, the civil person begins to exit local and confessional records and enter a unified administrative form. It is not yet a unique identifier. But it is the first major attempt at administrative serialisation of civil identity.",
+    },
+    thesis: {
+      ro: "Libertatea modernă vine și cu un format nou de intrare. Exact când vechiul regim se fisurează și noul stat promite ordine juridică, persoana începe să fie prinsă într-o infrastructură mai rece: nașterea, căsătoria și moartea nu mai depind doar de memoria comunității, de parohie sau de uz local. Ele intră într-un regim de înregistrare standardizată, repetabilă și verificabilă. Nu e încă CNP. Dar este primul pas mare prin care identitatea civilă devine administrabilă.",
+      en: "Modern freedom also comes with a new entry format. Exactly when the old regime fractures and the new state promises legal order, the person begins to be caught in a colder infrastructure: birth, marriage and death no longer depend only on community memory, parish or local custom. They enter a regime of standardised, repeatable and verifiable registration. Not yet a personal numeric code. But the first major step through which civil identity becomes administrable.",
+    },
+    antithesis: {
+      ro: "Fără stare civilă de stat, libertatea rămâne fragilă și locală. Un stat modern nu poate garanta filiația, succesiunea, capacitatea juridică sau identitatea persoanei dacă acestea rămân dispersate în registre neuniforme, confesionale sau strict comunitare. Trecerea la evidențe civile controlate de autoritatea publică nu este doar fixare administrativă; este condiția prin care drepturile devin verificabile și opozabile dincolo de sat, familie sau parohie.",
+      en: "Without state civil registry, freedom remains fragile and local. A modern state cannot guarantee filiation, succession, legal capacity or the identity of a person if these remain scattered across non-uniform, confessional or strictly communal registers. The transition to civil records controlled by public authority is not just administrative fixing; it is the condition through which rights become verifiable and enforceable beyond village, family or parish.",
+    },
+    synthesis: {
+      ro: "Modernizarea civilă nu a separat libertatea de evidență. Le-a făcut să crească împreună. Din acest punct, persoana nu mai este doar cunoscută social. Devine și fixată administrativ. Același pas care o scoate din arbitrarul vechiului regim o face mai lizibilă pentru statul care se construiește.",
+      en: "Civil modernisation did not separate freedom from records. It made them grow together. From this point, the person is no longer only socially known. They also become administratively fixed. The same step that removes them from the arbitrariness of the old regime makes them more legible to the state being built.",
+    },
+    factualLayer: [
+      {
+        ro: "Legea comunală (31 martie 1864) și Codul civil din 1864 marchează pasul prin care statul intră în administrarea identității civile; Codul civil a fost promulgat la 4 decembrie 1864 și pus în aplicare la 1 decembrie 1865.",
+        en: "The Communal Law (31 March 1864) and the Civil Code of 1864 mark the step by which the state enters the management of civil identity; the Civil Code was promulgated on 4 December 1864 and came into force on 1 December 1865.",
+      },
+      {
+        ro: "De la 1 ianuarie 1865, vechile registre parohiale încep să fie transformate în registre comunale de stare civilă, verificate, certificate și centralizate de primar.",
+        en: "From 1 January 1865, old parish registers begin to be converted into communal civil status registers, verified, certified and centralised by the mayor.",
+      },
+      {
+        ro: "Mutația nu introduce încă un număr personal unic, dar mută persoana din memoria comunității într-o evidență civilă standardizată și controlată public.",
+        en: "The mutation does not yet introduce a unique personal number, but moves the person from community memory into a standardised and publicly controlled civil record.",
+      },
+    ],
+    legalLayer: [
+      {
+        ro: "Legea comunală / 1864 — mută administrarea vieții civile în cadrul autorității locale și pregătește controlul public asupra registrelor de stare civilă.",
+        en: "Communal Law / 1864 — transfers management of civil life into local authority and prepares public control over civil status registers.",
+      },
+      {
+        ro: "Codul civil / 1864–1865 — fixează cadrul juridic modern al stării și capacității persoanei și face posibilă uniformizarea actelor civile la scară de stat.",
+        en: "Civil Code / 1864–1865 — establishes the modern legal framework of a person's civil status and capacity, enabling uniform civil records at state scale.",
+      },
+    ],
+    systemLayer: [
+      {
+        ro: "Persoana apare acum ca obiect civil standardizat, comparabil și verificabil în afara comunității imediate.",
+        en: "The person now appears as a standardised, comparable and verifiable civil object outside the immediate community.",
+      },
+      {
+        ro: "Identitatea civilă poate fi reprodusă administrativ și transportată juridic între instituții și localități.",
+        en: "Civil identity can be reproduced administratively and transported legally between institutions and localities.",
+      },
+      {
+        ro: "Filiația, succesiunea și capacitatea juridică devin verificabile la scara statului, nu doar la nivelul comunității locale.",
+        en: "Filiation, succession and legal capacity become verifiable at state scale, not only at local community level.",
+      },
+    ],
+    systemView: {
+      title: { ro: "Ordinea juridică are nevoie de identitate civilă stabilă", en: "Legal order requires stable civil identity" },
+      body: {
+        ro: "Fără registre civile uniforme, statul modern rămâne o intenție, nu o infrastructură. Nu poți administra egal persoane, bunuri, succesiuni și raporturi juridice dacă identitatea lor depinde de memorie locală sau de evidențe paralele. Starea civilă de stat oferă persoanei o formă juridică stabilă, recognoscibilă și transportabilă între comunități și instituții.",
+        en: "Without uniform civil registers, the modern state remains an intention, not an infrastructure. You cannot equally administer persons, goods, successions and legal relations if their identity depends on local memory or parallel records. State civil status gives the person a stable, recognisable and transportable legal form across communities and institutions.",
+      },
+    },
+    rebelView: {
+      title: { ro: "Fiecare libertate nouă vine cu un format nou de intrare", en: "Every new freedom comes with a new entry format" },
+      body: {
+        ro: "Când lumea vorbește despre reformă și modernizare, statul începe și munca mai tăcută: să te scrie, să te fixeze, să te facă repetabil în registre. Nu mai ești doar fiul cuiva, cunoscut de sat și de preot. Devii un caz civil standardizat. Pentru unii, asta era emancipare. Pentru alții, era începutul coliviei administrative.",
+        en: "When the world speaks of reform and modernisation, the state also begins its quieter work: to write you down, to fix you, to make you repeatable in registers. You are no longer just someone's son, known by village and priest. You become a standardised civil case. For some, that was emancipation. For others, it was the beginning of the administrative cage.",
+      },
+    },
+    whyItMatters: {
+      ro: "Între omul numărat și omul urmărit continuu lipsea o verigă: persoana civilă fixată de stat. Fără acest pas, 1949 ar părea o ruptură prea bruscă, iar CNP-ul ar veni peste un vid. Cuza nu introduce încă identificatorul personal. Introduce infrastructura în care o astfel de logică devine, mai târziu, posibilă.",
+      en: "Between the counted person and the continuously tracked person, a link was missing: the civil person fixed by the state. Without this step, 1949 would look like too abrupt a break and the personal numeric code would come over an emptiness. Cuza does not yet introduce the personal identifier. He introduces the infrastructure in which such a logic later becomes possible.",
+    },
+    consequences: [
+      {
+        ro: "Nașterea, căsătoria și moartea încep să circule într-o formă administrativă mai uniformă, nu doar într-o memorie local-confesională.",
+        en: "Birth, marriage and death begin to circulate in a more uniform administrative form, not only in local-confessional memory.",
+      },
+      {
+        ro: "Filiația, succesiunea și capacitatea juridică pot fi verificate mai stabil dincolo de comunitatea imediată, în cadrul unui stat care caută să se unifice administrativ.",
+        en: "Filiation, succession and legal capacity can be verified more stably beyond the immediate community, within a state seeking administrative unification.",
+      },
+      {
+        ro: "Persoana devine mai ușor de fixat, comparat și transportat juridic între instituții. Nu este încă serializare numerică tare, dar este prima mare serializare administrativă a identității civile.",
+        en: "The person becomes easier to fix, compare and legally transport between institutions. Not yet hard numeric serialisation, but the first major administrative serialisation of civil identity.",
+      },
+    ],
+    themeSlugs: ["identitate", "administratie", "lege", "vizibilitate"],
+    legalRefIds: ["legea-comunala-1864", "codul-civil-1864"],
+    sourceIds: [],
+    regimeId: "principate",
+    tags: ["stare-civila", "cuza", "cod-civil", "registre"],
+    relatedIds: ["dot-recensamant-1838", "dot-evidenta-1949"],
+    published: true,
+  },
+
+  // ─── DOT 4: Evidența centrală 1949 ───────────────────────────
   {
     id: "dot-evidenta-1949",
     slug: { ro: "evidenta-persoanelor-1949", en: "population-records-1949" },

@@ -244,6 +244,40 @@ export const seedLegalReferences: LegalReference[] = [
     published: true,
   },
   {
+    id: "legea-comunala-1864",
+    type: "lege",
+    number: "din 31 martie 1864",
+    year: 1864,
+    issuedBy: { ro: "Alexandru Ioan Cuza / Domnia Principatelor Unite", en: "Alexandru Ioan Cuza / United Principalities" },
+    title: {
+      ro: "Legea comunală din 31 martie 1864",
+      en: "Communal Law of 31 March 1864",
+    },
+    excerpt: {
+      ro: "Organizează administrația locală și mută o parte din gestiunea vieții civile — inclusiv evidența populației — în cadrul autorității comunale publice, pregătind trecerea de la registrele parohiale la registrele de stare civilă.",
+      en: "Organises local administration and transfers part of the management of civil life — including population records — into the public communal authority, preparing the transition from parish registers to civil status registers.",
+    },
+    countryCode: "RO",
+    published: true,
+  },
+  {
+    id: "codul-civil-1864",
+    type: "lege",
+    number: "Codul civil din 1864",
+    year: 1864,
+    issuedBy: { ro: "Alexandru Ioan Cuza / Domnia Principatelor Unite", en: "Alexandru Ioan Cuza / United Principalities" },
+    title: {
+      ro: "Codul civil român din 1864 (în vigoare din 1 decembrie 1865)",
+      en: "Romanian Civil Code of 1864 (in force from 1 December 1865)",
+    },
+    excerpt: {
+      ro: "Fixează cadrul juridic modern al stării și capacității civile a persoanei. Face posibilă uniformizarea actelor de stare civilă la scară de stat și introduce logica juridică a persoanei ca subiect de drept verificabil și opozabil.",
+      en: "Establishes the modern legal framework of a person's civil status and capacity. Enables uniform civil status records at state scale and introduces the legal logic of the person as a verifiable and enforceable subject of law.",
+    },
+    countryCode: "RO",
+    published: true,
+  },
+  {
     id: "legea-677-2001",
     type: "lege",
     number: "nr. 677/2001",
