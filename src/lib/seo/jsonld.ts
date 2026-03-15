@@ -110,6 +110,18 @@ const COPY = {
   },
 } as const;
 
+// ─── Shared publisher node ─────────────────────────────────────────────────
+
+function publisherNode(locale: Locale) {
+  return {
+    "@type": "Organization",
+    "@id": "https://firrst-dot.vercel.app/#publisher",
+    name: locale === "ro" ? "prrimul punct?" : "firrst-dot?",
+    alternateName: locale === "ro" ? "firrst-dot?" : "prrimul punct?",
+    url: "https://firrst-dot.vercel.app",
+  };
+}
+
 // ─── Builders ──────────────────────────────────────────────────────────────
 
 export function buildWebsiteJsonLd(locale: Locale) {
@@ -128,6 +140,7 @@ export function buildWebsiteJsonLd(locale: Locale) {
     description: copy.siteDescription,
     genre: copy.genre,
     keywords: copy.keywords,
+    publisher: publisherNode(locale),
     about: {
       "@type": "Thing",
       name:
@@ -146,6 +159,14 @@ export function buildWebsiteJsonLd(locale: Locale) {
       url: timelineUrl,
       name: copy.timelineName,
       description: copy.timelineDescription,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${absoluteUrl(localePath(locale, "timeline"))}?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 }
@@ -168,6 +189,8 @@ export function buildLandingPageJsonLd(locale: Locale, dots: DotDoc[]) {
       inLanguage: locale,
       isPartOf: { "@id": `${homeUrl}#website` },
       breadcrumb: { "@id": `${homeUrl}#breadcrumbs` },
+      author: publisherNode(locale),
+      publisher: publisherNode(locale),
       about: copy.aboutProject,
       hasPart: [
         {
@@ -203,6 +226,7 @@ export function buildLandingPageJsonLd(locale: Locale, dots: DotDoc[]) {
       "@id": `${homeUrl}#breadcrumbs`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: copy.homeName, item: homeUrl },
+        { "@type": "ListItem", position: 2, name: copy.timelineName, item: timelineUrl },
       ],
     },
   ];
@@ -227,6 +251,8 @@ export function buildTimelineJsonLd(locale: Locale, dots: DotDoc[]) {
       inLanguage: locale,
       isPartOf: { "@id": `${homeUrl}#website` },
       breadcrumb: { "@id": `${timelineUrl}#breadcrumbs` },
+      author: publisherNode(locale),
+      publisher: publisherNode(locale),
       mainEntity: { "@id": `${timelineUrl}#itemlist` },
     },
     {
@@ -328,6 +354,8 @@ export function buildDotJsonLd(
       inLanguage: locale,
       isPartOf: { "@id": `${timelineUrl}#webpage` },
       mainEntityOfPage: { "@id": `${dotUrl}#webpage` },
+      author: publisherNode(locale),
+      publisher: publisherNode(locale),
       temporalCoverage,
       keywords,
       about: [
@@ -376,6 +404,8 @@ export function buildAboutPageJsonLd(locale: Locale) {
       inLanguage: locale,
       isPartOf: { "@id": `${homeUrl}#website` },
       breadcrumb: { "@id": `${aboutUrl}#breadcrumbs` },
+      author: publisherNode(locale),
+      publisher: publisherNode(locale),
     },
     {
       "@context": "https://schema.org",
