@@ -119,6 +119,10 @@ function publisherNode(locale: Locale) {
     name: locale === "ro" ? "prrimul punct?" : "firrst-dot?",
     alternateName: locale === "ro" ? "firrst-dot?" : "prrimul punct?",
     url: "https://firrst-dot.vercel.app",
+    description:
+      locale === "ro"
+        ? "Proiect editorial independent de cercetare istorico-juridică despre mutațiile prin care populația României a devenit vizibilă, clasificabilă și operabilă pentru stat — de la recensământul din 1838 până la identitatea digitală."
+        : "Independent editorial research project on the legal and institutional mutations through which the Romanian state made its population visible, classifiable and operable — from the 1838 census to digital identity.",
   };
 }
 
@@ -131,7 +135,7 @@ export function buildWebsiteJsonLd(locale: Locale) {
 
   return {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": ["WebSite", "CreativeWork"],
     "@id": `${homeUrl}#website`,
     url: homeUrl,
     name: copy.siteName,
@@ -141,6 +145,9 @@ export function buildWebsiteJsonLd(locale: Locale) {
     genre: copy.genre,
     keywords: copy.keywords,
     publisher: publisherNode(locale),
+    author: publisherNode(locale),
+    isAccessibleForFree: true,
+    temporalCoverage: "1838/..",
     about: {
       "@type": "Thing",
       name:
@@ -148,6 +155,11 @@ export function buildWebsiteJsonLd(locale: Locale) {
           ? "Mutații juridice și sistemice — România 1838–prezent"
           : "Legal and systemic mutations — Romania 1838–present",
       description: copy.aboutProject,
+      sameAs: [
+        "https://www.wikidata.org/wiki/Q181279",  // legal history
+        "https://www.wikidata.org/wiki/Q756035",  // population registration
+        "https://www.wikidata.org/wiki/Q484720",  // civil registration
+      ],
     },
     audience: {
       "@type": "Audience",
@@ -191,6 +203,7 @@ export function buildLandingPageJsonLd(locale: Locale, dots: DotDoc[]) {
       breadcrumb: { "@id": `${homeUrl}#breadcrumbs` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
       about: copy.aboutProject,
       hasPart: [
         {
@@ -253,6 +266,7 @@ export function buildTimelineJsonLd(locale: Locale, dots: DotDoc[]) {
       breadcrumb: { "@id": `${timelineUrl}#breadcrumbs` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
       mainEntity: { "@id": `${timelineUrl}#itemlist` },
     },
     {
@@ -345,7 +359,7 @@ export function buildDotJsonLd(
     },
     {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": ["Article", "ScholarlyArticle"],
       "@id": `${dotUrl}#article`,
       headline: lz(dot.title, locale),
       alternativeHeadline: lz(dot.shortLine, locale),
@@ -356,6 +370,8 @@ export function buildDotJsonLd(
       mainEntityOfPage: { "@id": `${dotUrl}#webpage` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
+      datePublished: dot.sortYear ? `${dot.sortYear}-01-01` : undefined,
       temporalCoverage,
       keywords,
       about: [
@@ -406,6 +422,7 @@ export function buildAboutPageJsonLd(locale: Locale) {
       breadcrumb: { "@id": `${aboutUrl}#breadcrumbs` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
     },
     {
       "@context": "https://schema.org",
