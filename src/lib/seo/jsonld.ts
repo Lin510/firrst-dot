@@ -157,44 +157,55 @@ export function buildLandingPageJsonLd(locale: Locale, dots: DotDoc[]) {
   const aboutUrl = absoluteUrl(localePath(locale, "about"));
   const publishedDots = dots.filter((d) => d.published !== false);
 
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": `${homeUrl}#webpage`,
-    url: homeUrl,
-    name: copy.siteName,
-    description: copy.landingDescription,
-    inLanguage: locale,
-    isPartOf: { "@id": `${homeUrl}#website` },
-    about: copy.aboutProject,
-    hasPart: [
-      {
-        "@type": "WebPage",
-        "@id": `${timelineUrl}#webpage`,
-        url: timelineUrl,
-        name: copy.timelineName,
-        description: copy.timelineDescription,
-      },
-      {
-        "@type": "WebPage",
-        "@id": `${aboutUrl}#webpage`,
-        url: aboutUrl,
-        name: copy.methodName,
-        description: copy.methodDescription,
-      },
-      ...publishedDots.slice(0, 8).map((dot) => {
-        const slug = slugOf(dot, locale);
-        const url = absoluteUrl(dotPath(locale, slug));
-        return {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${homeUrl}#webpage`,
+      url: homeUrl,
+      name: copy.siteName,
+      description: copy.landingDescription,
+      inLanguage: locale,
+      isPartOf: { "@id": `${homeUrl}#website` },
+      breadcrumb: { "@id": `${homeUrl}#breadcrumbs` },
+      about: copy.aboutProject,
+      hasPart: [
+        {
           "@type": "WebPage",
-          "@id": `${url}#webpage`,
-          url,
-          name: lz(dot.title, locale),
-          description: lz(dot.shortLine, locale),
-        };
-      }),
-    ],
-  };
+          "@id": `${timelineUrl}#webpage`,
+          url: timelineUrl,
+          name: copy.timelineName,
+          description: copy.timelineDescription,
+        },
+        {
+          "@type": "WebPage",
+          "@id": `${aboutUrl}#webpage`,
+          url: aboutUrl,
+          name: copy.methodName,
+          description: copy.methodDescription,
+        },
+        ...publishedDots.slice(0, 8).map((dot) => {
+          const slug = slugOf(dot, locale);
+          const url = absoluteUrl(dotPath(locale, slug));
+          return {
+            "@type": "WebPage",
+            "@id": `${url}#webpage`,
+            url,
+            name: lz(dot.title, locale),
+            description: lz(dot.shortLine, locale),
+          };
+        }),
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${homeUrl}#breadcrumbs`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: copy.homeName, item: homeUrl },
+      ],
+    },
+  ];
 }
 
 export function buildTimelineJsonLd(locale: Locale, dots: DotDoc[]) {
