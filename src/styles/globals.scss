@@ -1,8 +1,10 @@
+@use "sass:color";
+
 @import "tailwindcss";
 
-/* ─── Design tokens ─────────────────────────────────────────── */
+// ─── Design tokens ─────────────────────────────────────────── //
 :root {
-  /* Palette — parchment / ink / muted bronze */
+  // Palette — parchment / ink / muted bronze
   --color-parchment:     #f5f0e8;
   --color-parchment-dim: #ece5d8;
   --color-ink:           #1e1c18;
@@ -12,31 +14,31 @@
   --color-surface:       #ffffff;
   --color-surface-raised:#faf7f2;
 
-  --color-accent:        #8b6f47;   /* muted bronze */
+  --color-accent:        #8b6f47;   // muted bronze
   --color-accent-light:  #c4a882;
   --color-accent-muted:  #d4c4ae;
 
-  --color-slate:         #3d4a5c;   /* deep blue-grey */
+  --color-slate:         #3d4a5c;   // deep blue-grey
   --color-slate-dim:     #5a6b80;
 
   --color-border:        #d8d0c4;
   --color-border-subtle: #e8e3da;
 
-  /* Typography */
+  // Typography
   --font-reading: "Georgia", "Times New Roman", serif;
   --font-ui:      system-ui, -apple-system, sans-serif;
 
-  /* Spacing rhythm */
+  // Spacing rhythm
   --reading-max-width: 72ch;
   --content-max-width: 1200px;
   --timeline-dot-size: 12px;
 
-  /* Background / foreground defaults */
+  // Background / foreground defaults
   --background: var(--color-parchment);
   --foreground: var(--color-ink);
 }
 
-/* ─── Reset & base ──────────────────────────────────────────── */
+// ─── Reset & base ──────────────────────────────────────────── //
 *,
 *::before,
 *::after {
@@ -59,7 +61,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── Typography scale ──────────────────────────────────────── */
+// ─── Typography scale ──────────────────────────────────────── //
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-reading);
   font-weight: 400;
@@ -83,21 +85,21 @@ a {
   text-decoration-color: var(--color-accent-muted);
   text-underline-offset: 3px;
   transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover {
+    color: var(--color-ink);
+    text-decoration-color: var(--color-ink);
+  }
 }
 
-a:hover {
-  color: var(--color-ink);
-  text-decoration-color: var(--color-ink);
-}
-
-/* ─── Focus visible ─────────────────────────────────────────── */
+// ─── Focus visible ─────────────────────────────────────────── //
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* ─── Reduced motion ────────────────────────────────────────── */
+// ─── Reduced motion ────────────────────────────────────────── //
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
