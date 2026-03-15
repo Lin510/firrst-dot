@@ -337,11 +337,11 @@
 
   li {
     font-family: var(--font-ui);
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
     font-weight: 400;
     color: color-mix(in srgb, var(--color-slate) 60%, var(--color-ink-muted));
     letter-spacing: 0.015em;
-    line-height: 1.55;
+    line-height: 1.6;
     padding-left: 0.875rem;
 
     &::before {

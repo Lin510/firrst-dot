@@ -1,10 +1,33 @@
+import type { Metadata } from "next";
 import type { Locale } from "@/lib/types";
 import { isValidLocale, defaultLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/getDictionary";
+import { JsonLd } from "@/components/JsonLd";
+import { buildAboutPageJsonLd } from "@/lib/seo/jsonld";
+import { localePath } from "@/lib/i18n/paths";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const lang: Locale = isValidLocale(locale) ? locale : defaultLocale;
+  const isRo = lang === "ro";
+  return {
+    title: { absolute: isRo ? "Metodă — prrimul punct?" : "Method — firrst-dot?" },
+    description: isRo
+      ? "Cum sunt selectate, ancorate și interpretate punctele: mutație, două capete ale realității și sinteză structurală."
+      : "How the dots are selected, anchored and interpreted: mutation, two ends of reality and structural synthesis.",
+    alternates: {
+      canonical: localePath(lang, "about"),
+      languages: {
+        ro: localePath("ro", "about"),
+        en: localePath("en", "about"),
+      },
+    },
+  };
+}
 
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
@@ -15,6 +38,7 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <div className="px-6 py-20 md:py-32 max-w-[var(--content-max-width)] mx-auto">
+      <JsonLd data={buildAboutPageJsonLd(lang)} />
       <header className="mb-16 max-w-2xl">
         <p className="text-xs font-sans tracking-[0.2em] uppercase text-[var(--color-ink-subtle)] mb-4">
           {dict.about.tagline}

@@ -1,19 +1,44 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import type { Locale } from "@/lib/types";
 import { isValidLocale, defaultLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/getDictionary";
+import { connectDB } from "@/lib/db/connect";
+import { Dot } from "@/models/Dot";
+import { JsonLd } from "@/components/JsonLd";
+import { buildLandingPageJsonLd } from "@/lib/seo/jsonld";
+import { localePath } from "@/lib/i18n/paths";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const lang: Locale = isValidLocale(locale) ? locale : defaultLocale;
+  return {
+    alternates: {
+      canonical: localePath(lang, "home"),
+      languages: {
+        ro: localePath("ro", "home"),
+        en: localePath("en", "home"),
+      },
+    },
+  };
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   const lang: Locale = isValidLocale(locale) ? locale : defaultLocale;
   const dict = await getDictionary(lang);
 
+  await connectDB();
+  const rawDots = await Dot.find({ published: true }).sort({ sortYear: 1 }).lean().exec();
+  const dots = JSON.parse(JSON.stringify(rawDots));
+
   return (
     <div className="px-6 py-20 md:py-32 flex flex-col gap-16 max-w-[var(--content-max-width)] mx-auto">
+      <JsonLd data={buildLandingPageJsonLd(lang, dots)} />
       {/* Entry question */}
       <section className="flex flex-col gap-6 max-w-2xl">
         <p
@@ -32,7 +57,7 @@ export default async function HomePage({ params }: Props) {
         </p>
 
         <Link
-          href={`/${lang}/timeline`}
+          href={localePath(lang, "timeline")}
           className="self-start mt-4 inline-block px-6 py-3 text-sm font-sans tracking-wider border border-[var(--color-border)] text-[var(--color-ink-muted)] no-underline hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
         >
           {dict.home.cta}

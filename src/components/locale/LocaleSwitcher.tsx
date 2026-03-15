@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Locale } from "@/lib/types";
 import { locales } from "@/lib/i18n/config";
+import { switchLocalePath } from "@/lib/i18n/paths";
 
 type Props = {
   locale: Locale;
@@ -12,7 +13,7 @@ type Props = {
 export default function LocaleSwitcher({ locale }: Props) {
   const pathname = usePathname();
   const otherLocale = locales.find((l) => l !== locale) as Locale;
-  const switchedPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+  const switchedPath = switchLocalePath(pathname, locale, otherLocale);
 
   return (
     <Link

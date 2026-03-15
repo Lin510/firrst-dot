@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/lib/types";
 import type { Dictionary } from "@/lib/i18n/getDictionary";
 import LocaleSwitcher from "@/components/locale/LocaleSwitcher";
+import { localePath } from "@/lib/i18n/paths";
 
 type Props = {
   locale: Locale;
@@ -24,13 +25,13 @@ export default function SiteNav({ locale, dict }: Props) {
 
       <div className="flex items-center gap-6 text-sm">
         <Link
-          href={`/${locale}/timeline`}
+          href={localePath(locale, "timeline")}
           className="text-[var(--color-ink-muted)] no-underline hover:text-[var(--color-ink)] transition-colors"
         >
           {dict.nav.timeline}
         </Link>
         <Link
-          href={`/${locale}/about`}
+          href={localePath(locale, "about")}
           className="text-[var(--color-ink-muted)] no-underline hover:text-[var(--color-ink)] transition-colors"
         >
           {dict.nav.about}
