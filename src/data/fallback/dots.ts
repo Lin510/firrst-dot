@@ -16,6 +16,7 @@ export const seedDots: DotRecord[] = [
       ro: "Puterea nu știa cine ești. Aceasta nu era o grație — era o limită a puterii.",
       en: "Power did not know who you were. That was not a grace — it was a limit of power.",
     },
+    coolingLabel: { ro: "om viu", en: "living person" },
     summary: {
       ro: "Înainte de modernitate, omul era vizibil doar local și parțial: gospodărie, brațe de muncă, contribuabili. Niciun sistem central nu încerca să obțină o imagine completă. Puterea opera prin comunitate, nu prin individ.",
       en: "Before modernity, a person was visible only locally and partially: household, labor, taxpayer. No central system sought a complete image. Power operated through community, not through the individual.",
@@ -114,6 +115,7 @@ export const seedDots: DotRecord[] = [
       ro: "De acum, a trăi într-un teritoriu înseamnă a fi numărat.",
       en: "From now on, to live in a territory means to be counted.",
     },
+    coolingLabel: { ro: "numărare", en: "counting" },
     summary: {
       ro: "Între 1838 și 1860, Principatele Române introduc primele operațiuni sistematice de numărare și clasificare a populației. Recensământul nu e doar statistică — e primul moment în care statul declară că vrea să știe cine locuiește pe teritoriul său.",
       en: "Between 1838 and 1860, the Romanian Principalities introduce the first systematic operations to count and classify the population. The census is not just statistics — it is the first moment when the state declares it wants to know who lives on its territory.",
@@ -216,6 +218,7 @@ export const seedDots: DotRecord[] = [
       ro: "Nu mai exiști doar în memoria comunității. Exiști și în registrul statului.",
       en: "You no longer exist only in community memory. You exist also in the state register.",
     },
+    coolingLabel: { ro: "registru civil", en: "civil registry" },
     summary: {
       ro: "Sub Cuza, persoana civilă începe să iasă din evidența locală și confesională și să intre într-o formă administrativă unificată. Nu este încă un identificator unic. Este însă prima mare tentativă de serializare administrativă a identității civile.",
       en: "Under Cuza, the civil person begins to exit local and confessional records and enter a unified administrative form. It is not yet a unique identifier. But it is the first major attempt at administrative serialisation of civil identity.",
@@ -325,6 +328,7 @@ export const seedDots: DotRecord[] = [
       ro: "Dosarul tău nu se mai închide. Rămâne deschis toată viața.",
       en: "Your file no longer closes. It stays open for life.",
     },
+    coolingLabel: { ro: "dosar permanent", en: "permanent file" },
     summary: {
       ro: "Regimul comunist instaurează evidența continuă a populației. Nu mai e vorba de recensământ periodic — fiecare mișcare, schimbare de domiciliu, stare civilă sau profesie intră în fișa permanentă de evidență. Statul socialist vrea să știe unde ești permanent, nu doar la momente discrete.",
       en: "The communist regime establishes continuous population surveillance. It is no longer about periodic census — every movement, change of address, civil status or profession enters the permanent record file. The socialist state wants to know where you are permanently, not just at discrete moments.",
@@ -434,6 +438,7 @@ export const seedDots: DotRecord[] = [
       ro: "Omul devine serie. 13 cifre — imuabile, totale, atribuite la naștere.",
       en: "The person becomes a series. 13 digits — immutable, total, assigned at birth.",
     },
+    coolingLabel: { ro: "serie", en: "series" },
     summary: {
       ro: "Decretul nr. 97/1978 introduce Codul Numeric Personal — un identificator unic, imuabil, atribuit la naștere și valabil toată viața. Pentru prima dată în istoria României, o persoană poate fi identificată univoc de orice instituție a statului prin același număr.",
       en: "Decree no. 97/1978 introduces the Personal Numeric Code — a unique, immutable identifier assigned at birth and valid for life. For the first time in Romanian history, a person can be univocally identified by any state institution through the same number.",
@@ -521,121 +526,223 @@ export const seedDots: DotRecord[] = [
     sourceIds: [],
     regimeId: "comunism",
     tags: ["CNP", "identificator", "serie", "interoperabilitate"],
-    relatedIds: ["dot-evidenta-1949", "dot-gramatica-juridica-1990"],
+    relatedIds: ["dot-evidenta-1949", "dot-forma-juridica-1990"],
     published: true,
   },
 
-  // ─── DOT 5: Gramatica juridică 1990-1991 ─────────────────────
+  // ─── DOT 5a: Forma juridică 1990 ────────────────────────────
   {
-    id: "dot-gramatica-juridica-1990",
-    slug: { ro: "gramatica-juridica-1990", en: "legal-grammar-1990" },
+    id: "dot-forma-juridica-1990",
+    slug: { ro: "libertatea-in-carcasa", en: "freedom-in-form" },
     title: {
-      ro: "Schimbarea gramaticii juridice",
-      en: "The change of legal grammar",
+      ro: "Libertatea în carcasă",
+      en: "Freedom in form",
     },
-    periodLabel: { ro: "1990–1991", en: "1990–1991" },
+    periodLabel: { ro: "1990", en: "1990" },
     sortYear: 1990,
-    endYear: 1991,
     shortLine: {
-      ro: "Ai primit dreptul la titlu. Ai intrat în registrul deținătorilor.",
-      en: "You received the right to title. You entered the registry of holders.",
+      ro: "Unitatea de stat se rupe în regie autonomă și societate comercială.",
+      en: "The state unit breaks into autonomous undertaking and commercial company.",
     },
+    coolingLabel: { ro: "formă juridică", en: "legal form" },
     summary: {
-      ro: "Prăbușirea comunismului aduce o mutație juridică structurală: prin legile din 1990–1991, persoana intră pentru prima dată în registrele proprietarilor, asociaților și debitorilor. Nu mai este vizibilă doar ca cetățean — devine vizibilă și ca actor economic cu titluri și obligații opozabile.",
-      en: "The collapse of communism brings a structural legal mutation: through the laws of 1990–1991, the person enters for the first time the registries of owners, associates and debtors. They are no longer visible only as a citizen — they become visible also as an economic actor with opposable titles and obligations.",
+      ro: "Prin Legea nr. 15/1990 și Legea nr. 31/1990, vechea unitate economică de stat este reorganizată în regii autonome și societăți comerciale. Societatea comercială devine persoană juridică prin înmatriculare. Persoana intră în noua ordine economică nu ca actor liber în spațiu gol, ci imediat încadrată în forme juridice precise: act constitutiv, registru, capital, asociat, răspundere.",
+      en: "Through Law no. 15/1990 and Law no. 31/1990, the old state economic unit is reorganised into autonomous undertakings and commercial companies. A commercial company acquires legal personality through registration. The person enters the new economic order not as a free actor in empty space, but immediately framed in precise legal forms: constitutive act, registry, capital, associate, liability.",
     },
     thesis: {
-      ro: "Proprietatea privată nu e doar un drept — e intrarea în registrul deținătorilor. Ești urmărit, executat și verificat pentru ce deții, nu pentru cine ești.",
-      en: "Private property is not just a right — it is entry into the registry of holders. You are tracked, executed and verified for what you hold, not for who you are.",
+      ro: "1990 deschide noua ordine prin mutația de formă: ierarhia nu cade, ci începe să opereze prin forma juridică constituită și înmatriculată.",
+      en: "1990 opens the new order through the mutation of form: hierarchy does not fall, it begins to operate through constituted and registered legal form.",
     },
     antithesis: {
-      ro: "Fără titlu juridic documentat, proprietatea nu există în fața legii — există doar ca fapt. Faptul poate fi negat, contestat, confiscat. Registrele nu sunt un inventar al obedienței — sunt singura formă prin care dreptul privat devine apărabil.",
-      en: "Without a documented legal title, property does not exist before the law — it exists only as a fact. Facts can be denied, contested, confiscated. Registries are not an inventory of obedience — they are the only form through which private rights become defensible.",
+      ro: "Libertatea nu apare ca spațiu gol. Apare deja încadrată, clasificată și pusă în vehicule juridice precise. Nu ieși din vechea ordine în aer liber — intri imediat în regie, act constitutiv și registrul comerțului.",
+      en: "Freedom does not appear as empty space. It appears already framed, classified and placed in precise legal vehicles. You do not exit the old order into open air — you enter immediately into an undertaking, constitutive act and trade registry.",
     },
     synthesis: {
-      ro: "Dreptul de proprietate creează profilul economic al persoanei: a deține înseamnă a fi identificat ca deținător.",
-      en: "Property rights create the economic profile of the person: to own means to be identified as an owner.",
+      ro: "Cetățeanul nu dispare; devine insuficient. Persoana devine lizibilă și operabilă și ca actor economic formal constituit.",
+      en: "The citizen does not disappear; it becomes insufficient. The person becomes legible and operable also as a formally constituted economic actor.",
     },
     factualLayer: [
       {
-        ro: "Legea 15/1990 — reorganizarea unităților economice de stat în regii autonome și societăți comerciale.",
-        en: "Law 15/1990 — reorganization of state economic units into autonomous undertakings and commercial companies.",
+        ro: "Legea nr. 15/1990 — unitățile economice de stat se reorganizează, prin art. 1, în regii autonome sau societăți comerciale.",
+        en: "Law no. 15/1990 — state economic units are reorganised, by art. 1, into autonomous undertakings or commercial companies.",
       },
       {
-        ro: "Legea 31/1990 — legea societăților comerciale. Prima lege care permite persoanelor fizice să constituie societăți.",
-        en: "Law 31/1990 — the companies law. The first law allowing natural persons to form companies.",
+        ro: "Legea nr. 31/1990 — introduce formele societare (SNC, SCS, SA, SCA, SRL) și fixează că societatea dobândește personalitate juridică de la data înmatriculării în registrul comerțului.",
+        en: "Law no. 31/1990 — introduces company forms (SNC, SCS, SA, SCA, SRL) and establishes that a company acquires legal personality from the date of registration in the trade registry.",
       },
       {
-        ro: "Legea fondului funciar 18/1991 — restituirea parțială a proprietăților agricole.",
-        en: "Land fund law 18/1991 — partial restitution of agricultural properties.",
+        ro: "Ambele legi sunt promulgate în temeiul Decretului-lege nr. 92/1990, anterior referendumului constituțional. Parlamentul funcționa simultan ca adunare legislativă și Adunare Constituantă.",
+        en: "Both laws are promulgated under Decree-Law no. 92/1990, before the constitutional referendum. Parliament functioned simultaneously as legislative assembly and Constituent Assembly.",
       },
     ],
     legalLayer: [
       {
-        ro: "Legea 15/1990 — reorganizează unitățile economice de stat în regii autonome şi societăți comerciale.",
-        en: "Law 15/1990 — reorganises state economic units into autonomous undertakings and commercial companies.",
+        ro: "Legea nr. 15/1990 + 1990 + reorganizează + unitățile economice de stat în regii autonome și societăți comerciale.",
+        en: "Law no. 15/1990 + 1990 + reorganises + state economic units into autonomous undertakings and commercial companies.",
       },
       {
-        ro: "Legea 31/1990 — introduce regimul juridic al societăților comerciale şi obligă la înregistrare publică.",
-        en: "Law 31/1990 — introduces the legal regime of commercial companies and obliges public registration.",
-      },
-      {
-        ro: "Legea 18/1991 — reactivează fondul funciar ca obiect de titlu, restituire şi evidență cadastrală.",
-        en: "Law 18/1991 — reactivates the land fund as an object of title, restitution and cadastral record.",
-      },
-      {
-        ro: "Constituția / 1991 — consacră proprietatea privată şi garantează economia de piață ca fundament constituțional.",
-        en: "Constitution / 1991 — enshrines private property and guarantees the market economy as constitutional foundation.",
+        ro: "Legea nr. 31/1990 + 1990 + înmatriculează + societatea comercială ca persoană juridică și fixează asocierea în formă opozabilă.",
+        en: "Law no. 31/1990 + 1990 + registers + the commercial company as a legal person and fixes association in an opposable form.",
       },
     ],
     systemLayer: [
       {
-        ro: "Statul câștigă noi puncte de vizibilitate: registrul comerțului, cadastrul, ANAF.",
-        en: "The state gains new visibility points: trade registry, cadastre, fiscal authority.",
+        ro: "Registrul comerțului devine primul punct de vizibilitate economică a persoanei: actul constitutiv, asociații, capitalul și obiectul de activitate sunt publice și opozabile.",
+        en: "The trade registry becomes the first point of economic visibility of the person: the constitutive act, associates, capital and object of activity are public and opposable.",
       },
       {
-        ro: "Persoana cu proprietate privată devine automat subiect fiscal identificabil.",
-        en: "A person with private property automatically becomes an identifiable fiscal subject.",
+        ro: "Forma juridică devine condiție de acces: fără înmatriculare, activitatea economică nu produce efecte opozabile terților.",
+        en: "Legal form becomes a condition of access: without registration, economic activity produces no effects opposable to third parties.",
       },
       {
-        ro: "Activitatea economică privată devine trasabilă legal pentru prima dată.",
-        en: "Private economic activity becomes legally traceable for the first time.",
+        ro: "Ordinea economică devine lizibilă prin formă: statul, băncile și partenerii comerciali pot identifica, verifica și executa față de o entitate formalizată.",
+        en: "The economic order becomes legible through form: the state, banks and commercial partners can identify, verify and enforce against a formalised entity.",
       },
     ],
     systemView: {
-      title: { ro: "Construcția statului de drept", en: "Building the rule of law" },
+      title: { ro: "Infrastructura ordinii de piață", en: "Infrastructure of the market order" },
       body: {
-        ro: "Statul de drept nu poate funcționa fără evidența clară a drepturilor de proprietate și a obligațiilor juridice. Fără registre nu există securitate juridică, credit bancar sau investiție privată. Piața nu se construiește pe promisiuni — se construiește pe titluri.",
-        en: "The rule of law cannot function without clear records of property rights and legal obligations. Without registries there is no legal security, no bank credit, no private investment. The market is not built on promises — it is built on titles.",
+        ro: "Fără forme juridice precise nu există piață funcțională. Regia și societatea comercială sunt vehiculele prin care capitalul, munca și răspunderea pot fi alocate, transferate și executate. Formele nu sunt birocrație — sunt condițiile de bază ale economiei private.",
+        en: "Without precise legal forms there is no functioning market. The undertaking and the commercial company are the vehicles through which capital, labour and liability can be allocated, transferred and enforced. Forms are not bureaucracy — they are the basic conditions of the private economy.",
       },
     },
     rebelView: {
-      title: { ro: "Noi registre, nouă vizibilitate", en: "New registries, new visibility" },
+      title: { ro: "Libertatea vine în carcasă", en: "Freedom arrives in a casing" },
       body: {
-        ro: "Comunismul te ținea invizibil ca proprietar. Democrația te-a făcut vizibil ca deținător, asociat, debitor, contribuabil. Iluzia era că vizibilitatea asta e libertate. E și libertate — și un nou inventar.",
-        en: "Communism kept you invisible as an owner. Democracy made you visible as a holder, associate, debtor, taxpayer. The illusion was that this visibility was freedom. It is freedom — and a new inventory.",
+        ro: "Ceea ce era prezentat ca eliberare economică venea deja formatat: regie, societate, act constitutiv, registru. Nu erai liber să exiști economic în afara formei. Libertatea nouă era disponibilă — dar numai dacă intrai în vehiculul juridic pregătit pentru tine.",
+        en: "What was presented as economic liberation came already formatted: undertaking, company, constitutive act, registry. You were not free to exist economically outside of form. The new freedom was available — but only if you entered the legal vehicle prepared for you.",
       },
     },
     whyItMatters: {
-      ro: "Gramatica juridică nouă creează un nou tip de vizibilitate: nu mai e evidența persoanei ca cetățean, ci ca actor economic, proprietar, debitor.",
-      en: "The new legal grammar creates a new type of visibility: no longer the record of the person as citizen, but as economic actor, owner, debtor.",
+      ro: "1990 este pragul în care libertatea economică devine disponibilă — dar numai prin formă juridică. Nu mai ești doar administrat; poți intra și ca actor economic formal constituit. Condiția: să exiști într-o formă pe care legea o recunoaște și o poate opera.",
+      en: "1990 is the threshold at which economic freedom becomes available — but only through legal form. You are no longer only administered; you may also enter as a formally constituted economic actor. The condition: to exist in a form the law recognises and can operate.",
     },
     consequences: [
       {
-        ro: "Creează baza pentru piața imobiliară, sistemul bancar și fiscalitatea modernă.",
-        en: "Creates the foundation for the real estate market, banking system and modern taxation.",
+        ro: "Registrul comerțului devine infrastructura de bază a economiei private: fără înmatriculare nu există persoană juridică, nu există cont bancar, nu există contract opozabil.",
+        en: "The trade registry becomes the basic infrastructure of the private economy: without registration there is no legal person, no bank account, no opposable contract.",
       },
       {
-        ro: "Autoritatea fiscală câștigă un nou punct de intrare: proprietatea privată creează automat obligații fiscale identificabile și urmăribile. Executarea silită devine posibilă la scară generalizată.",
-        en: "The fiscal authority gains a new entry point: private property automatically creates identifiable and traceable tax obligations. Enforcement by execution becomes possible at a generalized scale.",
+        ro: "Ordinea economică devine trasabilă: statul, autoritățile fiscale și creditorii pot identifica și executa față de entități formalizate. Activitatea economică informală pierde orice protecție juridică.",
+        en: "The economic order becomes traceable: the state, fiscal authorities and creditors can identify and enforce against formalised entities. Informal economic activity loses all legal protection.",
       },
     ],
-    themeSlugs: ["proprietate", "fiscal", "lege", "vizibilitate"],
-    legalRefIds: ["legea-15-1990", "legea-31-1990", "legea-18-1991", "constitutia-1991"],
+    themeSlugs: ["identitate", "lege", "vizibilitate", "administratie"],
+    legalRefIds: ["legea-15-1990", "legea-31-1990"],
     sourceIds: [],
     regimeId: "tranzitie",
-    tags: ["proprietate", "contract", "titlu", "societate", "tranzitie"],
-    relatedIds: ["dot-cnp-1978", "dot-rnep-2005"],
+    tags: ["forma-juridica", "societate", "regie", "inmatriculare", "tranzitie"],
+    relatedIds: ["dot-cnp-1978", "dot-titlu-juridic-1991"],
+    published: true,
+  },
+
+  // ─── DOT 5b: Titlul juridic 1991 ─────────────────────────────
+  {
+    id: "dot-titlu-juridic-1991",
+    slug: { ro: "dreptul-intra-in-titlu", en: "right-enters-title" },
+    title: {
+      ro: "Dreptul intră în titlu",
+      en: "Right enters title",
+    },
+    periodLabel: { ro: "1991", en: "1991" },
+    sortYear: 1991,
+    shortLine: {
+      ro: "Dreptul nou se fixează prin cerere, titlu de proprietate și poziție juridică opozabilă.",
+      en: "The new right is fixed through application, title deed and opposable legal position.",
+    },
+    coolingLabel: { ro: "titlu de proprietate", en: "title deed" },
+    summary: {
+      ro: "Prin Legea nr. 18/1991 și Constituția României din 1991, ordinea nouă deschisă în 1990 se stabilizează și se extinde: proprietatea privată primește regim de titlu, dreptul de proprietate se reconstituie la cerere, iar economia de piață și dubla structură a proprietății — publică și privată — sunt consacrate constituțional. În același interval, Legea nr. 28/1991 marchează și legarea ordinii interne de o infrastructură financiară internațională.",
+      en: "Through Law no. 18/1991 and the 1991 Constitution of Romania, the new order opened in 1990 is stabilised and extended: private property receives a title regime, property rights are reconstituted upon application, and the market economy and the dual structure of property — public and private — are constitutionally enshrined. In the same interval, Law no. 28/1991 also marks the linking of the domestic order to an international financial infrastructure.",
+    },
+    thesis: {
+      ro: "1991 stabilizează ordinea nouă prin titularizare: aceeași gramatică juridică coboară până în persoană ca titular identificabil al unei poziții opozabile.",
+      en: "1991 stabilises the new order through titularisation: the same legal grammar descends into the person as the identifiable holder of an opposable position.",
+    },
+    antithesis: {
+      ro: "Dreptul nu vine singur. El trebuie cerut, dovedit, fixat și recunoscut într-o formă care poate produce efecte juridice. Legea nr. 18/1991 spune explicit că stabilirea dreptului de proprietate se face la cerere. Cel care nu cere, nu dovedește, nu primește titlu — rămâne în afara ordinii juridice noi.",
+      en: "The right does not come on its own. It must be requested, proven, fixed and recognised in a form capable of producing legal effects. Law no. 18/1991 states explicitly that the establishment of property rights is made upon application. Those who do not apply, do not prove, do not receive title — remain outside the new legal order.",
+    },
+    synthesis: {
+      ro: "Persoana nu mai apare doar ca subiect abstract de drept, ci ca titular identificabil al unei poziții juridice formalizate: proprietar, creditor, debitor, asociat — poziții cu titlu, opozabile și executabile.",
+      en: "The person no longer appears only as an abstract subject of law, but as an identifiable holder of a formalised legal position: owner, creditor, debtor, associate — positions with title, opposable and enforceable.",
+    },
+    factualLayer: [
+      {
+        ro: "Legea nr. 18/1991 — legea fondului funciar: reconstituie dreptul de proprietate asupra terenului la cerere, prin eliberarea unui titlu de proprietate.",
+        en: "Law no. 18/1991 — the land fund law: reconstitutes property rights over land upon application, through the issuance of a title deed.",
+      },
+      {
+        ro: "Constituția României, adoptată de Adunarea Constituantă la 21 noiembrie 1991, intrată în vigoare după referendumul din 8 decembrie 1991 — consacră proprietatea privată, economia de piață și dubla structură publică/privată a proprietății.",
+        en: "The Romanian Constitution, adopted by the Constituent Assembly on 21 November 1991, entering into force after the referendum of 8 December 1991 — enshrines private property, the market economy and the dual public/private structure of property.",
+      },
+      {
+        ro: "Legea nr. 28/1991 — România acceptă Statutul Corporației Financiare Internaționale (Grupul Băncii Mondiale), adoptată cu luni înainte de referendumul constituțional.",
+        en: "Law no. 28/1991 — Romania accepts the Articles of Agreement of the International Finance Corporation (World Bank Group), adopted months before the constitutional referendum.",
+      },
+    ],
+    legalLayer: [
+      {
+        ro: "Legea nr. 18/1991 + 1991 + stabilește + dreptul de proprietate asupra terenurilor la cerere, prin eliberarea unui titlu de proprietate.",
+        en: "Law no. 18/1991 + 1991 + establishes + property rights over land upon application, through the issuance of a title deed.",
+      },
+      {
+        ro: "Constituția României + 1991 + consacră + economia de piață și regimul proprietății publice și private ca gramatică a noii ordini.",
+        en: "Romanian Constitution + 1991 + enshrines + the market economy and the regime of public and private property as the grammar of the new order.",
+      },
+      {
+        ro: "Legea nr. 28/1991 + 1991 + acceptă + Statutul Corporației Financiare Internaționale — ordinea internă se leagă de infrastructura capitalului transnațional înainte de referendumul constituțional.",
+        en: "Law no. 28/1991 + 1991 + accepts + the Articles of Agreement of the IFC — the domestic order ties itself to transnational capital infrastructure before the constitutional referendum.",
+      },
+    ],
+    systemLayer: [
+      {
+        ro: "Proprietatea privată devine poziție juridică opozabilă: poate fi dovedită, apărată, transferată și executată silit.",
+        en: "Private property becomes an opposable legal position: it can be proven, defended, transferred and enforced.",
+      },
+      {
+        ro: "Cererea devine mecanism de acces la drept: cel care nu formulează cererea și nu dovedește îndreptățirea rămâne în afara redistribuirii.",
+        en: "Application becomes the mechanism of access to rights: those who do not file an application and do not prove entitlement remain outside the redistribution.",
+      },
+      {
+        ro: "Constituția închide forma deschisă în 1990: noua gramatică juridică nu mai e legislație tranzitorie — devine ordine constituțională.",
+        en: "The Constitution closes the form opened in 1990: the new legal grammar is no longer transitional legislation — it becomes constitutional order.",
+      },
+    ],
+    systemView: {
+      title: { ro: "Consacrarea statului de drept", en: "Enshrinement of the rule of law" },
+      body: {
+        ro: "Constituția și titlul de proprietate nu sunt formalități — sunt infrastructura de bază a ordinii juridice. Fără consacrare constituțională, drepturile noi rămân fragile, revocabile, dependente de voința legislativă a momentului. Titlul nu e hârtie — e certitudine juridică.",
+        en: "The Constitution and the property title are not formalities — they are the basic infrastructure of the legal order. Without constitutional enshrinement, new rights remain fragile, revocable, dependent on the legislative will of the moment. The title is not paper — it is legal certainty.",
+      },
+    },
+    rebelView: {
+      title: { ro: "Dreptul nu vine singur", en: "The right does not come on its own" },
+      body: {
+        ro: "1991 nu distribuie drepturi — administrează accesul la ele. Dreptul de proprietate există dacă ai cerut, ai dovedit și ai primit titlu. Constituția garantează proprietatea, nu și faptul că o ai. Gramatica nouă e și mai clară acum: dreptul e real numai dacă ai intrat în formatul lui.",
+        en: "1991 does not distribute rights — it administers access to them. Property rights exist if you have applied, proven and received title. The Constitution guarantees property, not the fact that you have it. The new grammar is even clearer now: the right is real only if you have entered its format.",
+      },
+    },
+    whyItMatters: {
+      ro: "1991 este pragul în care ordinea deschisă în 1990 se fixează: proprietatea privată prinde titlu, economia de piață prinde Constituție, iar persoana intră în noua ordine ca titular identificabil al unei poziții juridice. Același limbaj de ordonare se răsfrânge acum integral în persoană, patrimoniu și titlu.",
+      en: "1991 is the threshold at which the order opened in 1990 becomes fixed: private property acquires title, the market economy acquires a Constitution, and the person enters the new order as an identifiable holder of a legal position. The same ordering language now fully reflects itself in person, patrimony and title.",
+    },
+    consequences: [
+      {
+        ro: "Titlul de proprietate devine document de bază al relației cu statul, băncile și piața imobiliară. Fără titlu nu există ipotecă, nu există credit, nu există transfer opozabil.",
+        en: "The title deed becomes the basic document in the relationship with the state, banks and the real estate market. Without title there is no mortgage, no credit, no opposable transfer.",
+      },
+      {
+        ro: "Constituția stabilizează mutațiile din 1990–1991: ele nu mai pot fi revocate prin lege ordinară. Noua ordine economică și juridică primește protecție constituțională.",
+        en: "The Constitution stabilises the mutations of 1990–1991: they can no longer be revoked by ordinary law. The new economic and legal order receives constitutional protection.",
+      },
+    ],
+    themeSlugs: ["identitate", "proprietate", "lege", "vizibilitate"],
+    legalRefIds: ["legea-18-1991", "constitutia-1991", "legea-28-1991"],
+    sourceIds: [],
+    regimeId: "tranzitie",
+    tags: ["titlu", "proprietate", "cerere", "constitutie", "tranzitie"],
+    relatedIds: ["dot-forma-juridica-1990", "dot-rnep-2005"],
     published: true,
   },
 
@@ -654,6 +761,7 @@ export const seedDots: DotRecord[] = [
       ro: "N dosare separate devin un singur profil. Fără știrea ta.",
       en: "N separate files become a single profile. Without your knowledge.",
     },
+    coolingLabel: { ro: "interoperabilitate", en: "interoperability" },
     summary: {
       ro: "Legea 290/2004 creează Registrul Național de Evidență a Persoanelor — o bază de date unificată care conectează toate înregistrările anterioare prin CNP. Nu mai sunt dosare separate — acum există un profil digital unic, accesibil instituțiilor autorizate ale statului.",
       en: "Law 290/2004 creates the National Register of Population Records — a unified database that connects all previous records through the personal ID number. There are no longer separate files — now there is a single digital profile, accessible to authorised state institutions.",
@@ -759,6 +867,7 @@ export const seedDots: DotRecord[] = [
       ro: "Nu mai trebuie să dovedești cine ești — poți fi accesat și operat digital.",
       en: "You no longer need to prove who you are — you can be accessed and operated digitally.",
     },
+    coolingLabel: { ro: "operabilitate la distanță", en: "remote operability" },
     summary: {
       ro: "Cartea de identitate electronică (CEI), eID-ul și portofelul digital european (eIDAS 2.0) fuzionează identitatea fizică cu cea digitală. Persoana devine un nod în rețeaua de sisteme interoperabile europene. Autentificarea biometrică, semnătura electronică și credențialele digitale creează un nou strat de lizibilitate: distanță zero.",
       en: "The electronic identity card (CEI), eID and the European digital wallet (eIDAS 2.0) fuse physical with digital identity. The person becomes a node in the network of interoperable European systems. Biometric authentication, electronic signature and digital credentials create a new layer of legibility: zero distance.",

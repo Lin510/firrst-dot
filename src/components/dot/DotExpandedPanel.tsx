@@ -11,6 +11,7 @@ type Props = {
   dict: Dictionary;
   prevDot?: MiniDot;
   nextDot?: MiniDot;
+  allDots: MiniDot[];
 };
 
 function L(
@@ -30,7 +31,7 @@ const REGIME_LABELS: Record<string, { ro: string; en: string }> = {
   "digital":     { ro: "Era Digitală",           en: "Digital Era" },
 };
 
-export default function DotExpandedPanel({ dot, locale, dict, prevDot, nextDot }: Props) {
+export default function DotExpandedPanel({ dot, locale, dict, prevDot, nextDot, allDots }: Props) {
   const d = dict.dot;
   const regimeLabel = dot.regimeId
     ? (REGIME_LABELS[dot.regimeId]?.[locale] ?? dot.regimeId)
@@ -61,6 +62,7 @@ export default function DotExpandedPanel({ dot, locale, dict, prevDot, nextDot }
 
       {/* ── Calea răcirii ────────────────────────────────────── */}
       <CoolingPath
+        allDots={allDots}
         dotId={dot.id}
         locale={locale}
         label={d.coolingPath}

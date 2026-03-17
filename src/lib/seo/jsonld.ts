@@ -203,6 +203,7 @@ export function buildLandingPageJsonLd(locale: Locale, dots: DotDoc[]) {
       breadcrumb: { "@id": `${homeUrl}#breadcrumbs` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
       about: copy.aboutProject,
       mentions: [
         {
@@ -265,6 +266,7 @@ export function buildTimelineJsonLd(locale: Locale, dots: DotDoc[]) {
       breadcrumb: { "@id": `${timelineUrl}#breadcrumbs` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
       mainEntity: { "@id": `${timelineUrl}#itemlist` },
     },
     {
@@ -312,7 +314,7 @@ export function buildTimelineJsonLd(locale: Locale, dots: DotDoc[]) {
 export function buildDotJsonLd(
   locale: Locale,
   dot: DotDoc,
-  allDots: DotDoc[]
+  allDots: Array<{ id?: string; slug?: { ro?: string; en?: string } }>
 ) {
   const copy = COPY[locale];
   const homeUrl = absoluteUrl(localePath(locale, "home"));
@@ -368,6 +370,7 @@ export function buildDotJsonLd(
       mainEntityOfPage: { "@id": `${dotUrl}#webpage` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
       datePublished: dot.sortYear ? `${dot.sortYear}-01-01` : undefined,
       temporalCoverage,
       keywords,
@@ -419,6 +422,7 @@ export function buildAboutPageJsonLd(locale: Locale) {
       breadcrumb: { "@id": `${aboutUrl}#breadcrumbs` },
       author: publisherNode(locale),
       publisher: publisherNode(locale),
+      isAccessibleForFree: true,
     },
     {
       "@context": "https://schema.org",

@@ -36,6 +36,7 @@ const DotSchema = new Schema<DotRecord>(
     endYear: Number,
 
     shortLine: { type: LocalizedTextSchema, required: true },
+    coolingLabel: { type: LocalizedTextSchema },
     summary: { type: LocalizedTextSchema, required: true },
 
     thesis: { type: LocalizedTextSchema, required: true },

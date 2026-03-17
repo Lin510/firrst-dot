@@ -7,6 +7,7 @@ import SiteNav from "@/components/navigation/SiteNav";
 import { JsonLd } from "@/components/JsonLd";
 import { buildWebsiteJsonLd } from "@/lib/seo/jsonld";
 import { localePath } from "@/lib/i18n/paths";
+import { AlternateHrefProvider } from "@/lib/i18n/AlternateHrefContext";
 
 type Props = {
   children: React.ReactNode;
@@ -51,6 +52,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <JsonLd data={buildWebsiteJsonLd(lang)} />
       </head>
       <body>
+        <AlternateHrefProvider>
         <div className="min-h-dvh flex flex-col" style={{ background: "var(--color-parchment)", color: "var(--color-ink)" }}>
           <header>
             <SiteNav locale={lang} dict={dict} />
@@ -60,6 +62,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <span>{lang === "ro" ? "prrimul punct?" : "firrst-dot?"}</span>
           </footer>
         </div>
+        </AlternateHrefProvider>
       </body>
     </html>
   );

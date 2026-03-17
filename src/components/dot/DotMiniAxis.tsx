@@ -6,6 +6,7 @@ export type MiniDot = {
   slug: { ro?: string; en?: string };
   title: { ro?: string; en?: string };
   periodLabel: { ro?: string; en?: string };
+  coolingLabel?: { ro?: string; en?: string };
 };
 
 type Props = {

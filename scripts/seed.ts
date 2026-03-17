@@ -96,6 +96,9 @@ async function seed(): Promise<void> {
   // one-time cleanup: renamed decretul-censura-1838 → recensamantul-1838
   await LegalReferenceModel.deleteMany({ id: "decretul-censura-1838" });
 
+  // one-time cleanup: split dot-gramatica-juridica-1990 into two dots (1990 + 1991)
+  await DotModel.deleteMany({ id: "dot-gramatica-juridica-1990" });
+
   await upsertById(RegimeModel, seedRegimes, "regimes");
 
   await upsertBySlug(ThemeModel, seedThemes, "themes");

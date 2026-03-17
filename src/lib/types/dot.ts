@@ -28,6 +28,7 @@ export type DotRecord = {
   endYear?: number;
 
   shortLine: LocalizedText;
+  coolingLabel?: LocalizedText;
   summary: LocalizedText;
 
   thesis: LocalizedText;

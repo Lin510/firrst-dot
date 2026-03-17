@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactCompiler: true,
 
+  sassOptions: {
+    silenceDeprecations: ["import"],
+  },
+
   // Serve localized Romanian URL slugs while internally routing to the
   // generic folder names used by the App Router.
   async rewrites() {
